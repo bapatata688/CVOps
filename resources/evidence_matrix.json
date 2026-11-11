@@ -1,0 +1,1027 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "metadata": {
+    "schema_version": "1.0.0",
+    "framework": "master_cv",
+    "last_updated": "2026-11-11",
+    "last_audited": "2026-11-11T20:10:00Z",
+    "title": "Evidence Matrix & Ethical Anti-Exaggeration Containment Specification",
+    "author": "Diego Alejandro Escobar Barahona",
+    "linter_target_contract": "scripts/lint_cv_truth.py",
+    "description": "Single Source of Truth (SSoT) and machine-readable ethical containment matrix for master_cv framework."
+  },
+  "candidate": {
+    "full_name": "Diego Alejandro Escobar Barahona",
+    "display_name": "Diego Escobar",
+    "location": "Soyapango, El Salvador",
+    "email": "diegoalejandroescobarahona1@gmail.com",
+    "phone": "+503 7549 0118",
+    "linkedin": "https://www.linkedin.com/in/diego-escobar-459256394",
+    "github": "https://github.com/bapatata688",
+    "credly_badge": "https://www.credly.com/badges/e27fea72-5eaf-47ee-a43c-43faa3a8fb10/public_url",
+    "ef_set_cert_url": "https://cert.efset.org/93nXaa"
+  },
+  "verifiable_facts": {
+    "education": {
+      "university_of_the_people": {
+        "institution": "University of the People",
+        "location": "Pasadena, California, USA",
+        "degree": "Bachelor of Science in Computer Science",
+        "status": "Admitted",
+        "term": "Term 3, 2027",
+        "start_date": "2027-01-28",
+        "accreditation": "WSCUC-accredited institution",
+        "modality": "100% Online",
+        "verbatim_block_en": [
+          "**University of the People** — Pasadena, California, USA",
+          "**Bachelor of Science in Computer Science**",
+          "Admitted | Term 3, 2027",
+          "WSCUC-accredited institution | 100% Online"
+        ],
+        "verbatim_block_es": [
+          "**University of the People** — Pasadena, California, EE. UU.",
+          "**Bachelor of Science in Computer Science**",
+          "Admitido | Term 3, 2027",
+          "Institución acreditada por WSCUC | 100% en Línea"
+        ]
+      },
+      "instituto_nacional_san_luis": {
+        "institution": "Instituto Nacional San Luis",
+        "location": "Soyapango, El Salvador",
+        "degree": "Bachillerato Técnico Vocacional en Desarrollo de Software",
+        "nie": "5450732",
+        "gpa": "9.5 / 10.0",
+        "graduation_date": "2026-12-10",
+        "official_title_delivery": "Q1 2027"
+      }
+    },
+    "certifications": {
+      "google_cloud_associate_data_practitioner": {
+        "name": "Google Cloud Certified — Associate Data Practitioner",
+        "cert_id": "23e3584a246f4c149f26fea03cebcbbb",
+        "credly_badge_id": "e27fea72-5eaf-47ee-a43c-43faa3a8fb10",
+        "issue_date": "2026-10-23",
+        "expiration_date": "2029-10-23",
+        "issuer": "Google Cloud",
+        "verification_provider": "Pearson VUE"
+      },
+      "ef_set_english": {
+        "name": "EF SET Certificate",
+        "certified_level": "C1 Advanced",
+        "overall_score": 66,
+        "score_scale": "66/100",
+        "listening_score": 75,
+        "listening_level": "C2 Proficient",
+        "reading_score": 67,
+        "reading_level": "C1 Advanced",
+        "speaking_score": 69,
+        "speaking_level": "C1 Advanced",
+        "writing_score": 51,
+        "writing_level": "B2 Upper Intermediate",
+        "issue_date": "2026-01-10",
+        "verification_url": "https://cert.efset.org/93nXaa"
+      }
+    },
+    "experience": {
+      "gbm": {
+        "company": "GBM (General Business Machines)",
+        "role": "Digital Solutions Specialist Intern (Data & AI)",
+        "program": "GBM2GROW",
+        "duration_weeks": 13,
+        "start_date": "2026-07-15",
+        "end_date": "2026-10-15",
+        "location": "San Salvador, El Salvador",
+        "supervisors": [
+          "Joaquín Francisco Solórzano Corea (AI Team Lead)",
+          "Juan Carlos Quintero Escobar (Product Owner Data & AI)"
+        ],
+        "deliverables": {
+          "elt_gcp": {
+            "description": "Enterprise near-real-time ELT pipeline architecture proposal on GCP",
+            "stack": [
+              "BigQuery",
+              "Dataform SQLX",
+              "Datastream CDC",
+              "Cloud Storage",
+              "HA VPN",
+              "Cloud Router",
+              "IAM"
+            ],
+            "artifacts": [
+              "Lucidchart models",
+              "snake_case SQL DDL scripts"
+            ],
+            "spec_compliance_pct": 100
+          },
+          "datastage_jobs": {
+            "count": 15,
+            "description": "Enterprise ETL integration jobs developed and tested in IBM InfoSphere DataStage",
+            "stages": [
+              "Transformers",
+              "Lookups",
+              "Joins",
+              "Merge",
+              "Funnel"
+            ],
+            "data_loss": "zero"
+          },
+          "db2": {
+            "description": "Database querying and parameterization on IBM DB2 LUW",
+            "os": "Red Hat Enterprise Linux (RHEL)"
+          },
+          "automation_tool": {
+            "description": "Python CLI automation tool under Spec-Driven Development (SDD)",
+            "acceleration_pct": 80,
+            "tickets_resolved": 24,
+            "platform": "Azure DevOps"
+          },
+          "mini_qwen3": {
+            "description": "Modular Transformer architecture implementation in PyTorch and Excel",
+            "components": [
+              "RMSNorm",
+              "QK-Norm",
+              "RoPE",
+              "causal attention",
+              "SwiGLU"
+            ],
+            "verification": "automated numerical parity regression tests"
+          }
+        }
+      }
+    },
+    "research": {
+      "ontotab": {
+        "title": "OntoTab: A Controlled Study of Ontology-Enriched Text for Tabular Credit Risk",
+        "type": "Internal Scientific Research Manuscript",
+        "authors_count": 7,
+        "candidate_rank": 2,
+        "candidate_authorship_string": "2nd author of 7",
+        "lead_author": "Joaquín Francisco Solórzano Corea",
+        "affiliation": "GBM, San Salvador, El Salvador",
+        "candidate_activity": "Activity E01 (Structured Baseline & Numeric-Oracle Experiments)",
+        "dataset": {
+          "name": "UCI Default of Credit Card Clients (Taiwan)",
+          "total_records": 30000,
+          "positive_class_pct": 0.2212,
+          "features_count": 20
+        },
+        "encoder": {
+          "name": "BAAI/bge-m3",
+          "dimension": 1024,
+          "fine_tuning": false
+        },
+        "methodology": {
+          "cross_validation": "5x3 stratified nested cross-validation",
+          "outer_folds": 5,
+          "inner_folds": 3,
+          "seeds": [
+            27092031,
+            27092032,
+            27092033
+          ],
+          "bootstrap_iterations": 2000,
+          "confidence_interval_pct": 95
+        },
+        "empirical_metrics": {
+          "r8_numeric_xgboost_ap": 0.559596,
+          "r0_raw_structured_xgboost_ap": 0.558879,
+          "r5_full_ontology_xgboost_ap": 0.506909,
+          "r9_hybrid_xgboost_ap": 0.556833,
+          "primary_ontology_contrast_r5_r2e": -0.006277,
+          "hybrid_restoration_gain_r9_r5": 0.04992
+        }
+      }
+    },
+    "projects": {
+      "ferrostats": {
+        "name": "FERROSTATS",
+        "type": "Personal Engineering Portfolio Project",
+        "description": "Cloud-Native Medallion Lakehouse on GCP with POS streaming",
+        "repositories": [
+          "https://github.com/bapatata688/Ferrostats",
+          "https://github.com/b0ldm6diego"
+        ],
+        "edge_latency_ms": 50,
+        "monthly_operating_cost_usd": 0.0,
+        "finops_mechanisms": [
+          "Cloud Run scale-to-zero (<3s cold start)",
+          "Keyless IAM Service Account authentication",
+          "Artifact Registry image pruning (<0.3 GB)"
+        ],
+        "medallion_layers": {
+          "bronze": "BigQuery raw tables ingested via REST API with SQLite WAL POS",
+          "silver": "Google Dataform SQLX staging views with automated data quality assertions",
+          "gold": "3 Star Schema data marts: fct_daily_sales, mart_inventory_pareto_abc, dim_products"
+        },
+        "analytics": [
+          "80/20 Pareto ABC classification",
+          "Daily Burn Rate",
+          "Days of Inventory (DOI) with 15-day safety stock",
+          "3-page Looker Studio dashboard"
+        ]
+      },
+      "sql_arena": {
+        "name": "SQL Arena",
+        "type": "Interactive SQL Training Platform",
+        "candidate_role": "Full-Stack Creator & Architect",
+        "stack": {
+          "frontend": "React 19, Vite, Tailwind CSS v4, Monaco Editor",
+          "backend": "Node.js, Express, MySQL 8.0 Community Server"
+        },
+        "hardening": [
+          "ExecutionMutex serializing requests against InnoDB .ibd Windows NTFS lock contention",
+          "Lexical AST parser blocking comment injections and multi-statements",
+          "Raw fields packet inspection preserving zero-row schemas",
+          "5000ms hard session execution timeout"
+        ],
+        "curriculum_total_problems": 34,
+        "test_suite_total_passing": 136,
+        "test_suite_pass_rate_pct": 100,
+        "candidate_user_solved_problems": 3,
+        "candidate_user_solved_list": [
+          "nulls-1",
+          "nulls-2",
+          "nulls-3"
+        ],
+        "candidate_user_in_progress": "rounding-1"
+      }
+    }
+  },
+  "global_forbidden_regexes": [
+    {
+      "rule_id": "GLOBAL-FORBID-001",
+      "regex": "(?i)\\b(?:95\\s*\\/\\s*100|95%\\s*ef\\s*set|ef\\s*set\\s*(?:score\\s*of\\s*)?95)\\b",
+      "description": "Strictly forbids claiming EF SET score of 95/100 (historical draft typo; official certified score is 66/100 C1 Advanced with 75/100 C2 Listening).",
+      "severity": "FATAL",
+      "category": "metric_exaggeration",
+      "failing_example": "certified C1/C2 English proficiency (EF SET 95/100)",
+      "passing_example": "EF SET English Certificate — C1 Advanced (66/100: Listening 75 C2)"
+    },
+    {
+      "rule_id": "GLOBAL-FORBID-002",
+      "regex": "(?i)\\b(?:senior|lead|principal|staff)\\s+(?:data\\s+engineer|cloud\\s+architect|software\\s+engineer|engineer|architect)\\b",
+      "description": "Strictly forbids senior, lead, principal, or staff job titles for candidate experience.",
+      "severity": "FATAL",
+      "category": "title_inflation",
+      "failing_example": "Senior Data Engineer at GBM",
+      "passing_example": "Junior Data Engineer | Data Engineer Intern (Digital Solutions Specialist)"
+    },
+    {
+      "rule_id": "GLOBAL-FORBID-003",
+      "regex": "(?i)\\b(?:professional\\s+data\\s+engineer|google\\s+cloud\\s+pde|gcp\\s+pde)\\b",
+      "description": "Strictly forbids claiming Google Cloud Professional Data Engineer (PDE) prior to passing the official exam.",
+      "severity": "FATAL",
+      "category": "unbacked_claim",
+      "failing_example": "Google Cloud Professional Data Engineer certified",
+      "passing_example": "Google Cloud Certified Associate Data Practitioner"
+    }
+  ],
+  "containment_harness": {
+    "forbidden_regex_patterns": [
+      {
+        "pattern": "(?i)95\\s*/\\s*100",
+        "reason": "Exaggeration of EF SET score (true certified score is 66/100, Listening 75/100)"
+      },
+      {
+        "pattern": "(?i)EF\\s*SET\\s*(?:score\\s*)?95",
+        "reason": "Exaggeration of EF SET score"
+      },
+      {
+        "pattern": "(?i)Senior\\s+(?:Data\\s+Engineer|Software\\s+Engineer|AI\\s+Engineer|Cloud\\s+Architect)",
+        "reason": "Seniority inflation (candidate holds intern / entry level experience)"
+      },
+      {
+        "pattern": "(?i)Staff\\s+(?:Data\\s+Engineer|Software\\s+Engineer|Architect)",
+        "reason": "Staff-level title inflation"
+      },
+      {
+        "pattern": "(?i)Lead\\s+(?:Data\\s+Engineer|Cloud\\s+Architect|Scientist)",
+        "reason": "Lead role inflation at GBM or projects"
+      },
+      {
+        "pattern": "(?i)Principal\\s+(?:Investigator|Engineer|Scientist)",
+        "reason": "Principal investigator inflation for OntoTab"
+      },
+      {
+        "pattern": "(?i)(?:published\\s+in|accepted\\s+(?:by|at)|proceedings\\s+of)\\s+(?:IEEE|ACM|NeurIPS|ICLR|ICML|KDD)",
+        "reason": "False claim of peer-reviewed publication venue for OntoTab"
+      },
+      {
+        "pattern": "(?i)(?:completed|solved)\\s+(?:all\\s+)?34\\s+(?:exercises|problems|challenges)",
+        "reason": "False claim of candidate user progress in SQL Arena (creator of 34, solved 3 as user)"
+      },
+      {
+        "pattern": "(?i)(?:commercial\\s+startup|revenue-generating|paying\\s+customers|raised\\s+\\$)",
+        "reason": "False commercial framing for FERROSTATS or SQL Arena"
+      },
+      {
+        "pattern": "(?i)Professional\\s+Data\\s+Engineer",
+        "reason": "Unearned certification (candidate holds Associate Data Practitioner)"
+      }
+    ],
+    "required_phrases": {
+      "uopeople_en": [
+        "University of the People",
+        "Bachelor of Science in Computer Science",
+        "Admitted | Term 3, 2027",
+        "WSCUC-accredited institution | 100% Online"
+      ],
+      "uopeople_es": [
+        "University of the People",
+        "Bachelor of Science in Computer Science",
+        "Admitido | Term 3, 2027",
+        "Institución acreditada por WSCUC | 100% en Línea"
+      ],
+      "ontotab_disclosure": [
+        "2nd author of 7",
+        "0.5596"
+      ],
+      "gbm_disclosure": [
+        "Digital Solutions Specialist Intern",
+        "15",
+        "DataStage"
+      ],
+      "ef_set_disclosure": [
+        "66/100",
+        "C1 Advanced"
+      ]
+    },
+    "metric_assertions": {
+      "ontotab_record_count": 30000,
+      "ontotab_xgboost_ap": 0.5596,
+      "ontotab_xgboost_ap_tolerance": 0.0001,
+      "gbm_duration_weeks": 13,
+      "gbm_datastage_jobs": 15,
+      "ef_set_overall_score": 66,
+      "ef_set_listening_score": 75,
+      "ferrostats_monthly_cost_usd": 0.0,
+      "ferrostats_edge_latency_ms": 50,
+      "sql_arena_curriculum_problems": 34,
+      "sql_arena_tests_passing": 136,
+      "sql_arena_candidate_solved": 3
+    }
+  },
+  "containment_domains": {
+    "ontotab": {
+      "domain_id": "ontotab",
+      "name": "OntoTab Scientific Research Paper",
+      "primary_evidence_source": "research/ontotab/OntoTab-finaledit.pdf",
+      "verifiable_metrics": [
+        {
+          "metric_id": "ONTO-METRIC-001",
+          "name": "Dataset Record Count",
+          "expected_value": 30000,
+          "acceptable_variants": ["30,000", "30000", "30k", "30K"],
+          "unit": "subject records",
+          "evidence_coordinates": "Page 1 Abstract line 20; Section 3 line 32",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "ONTO-METRIC-002",
+          "name": "Taiwan Default Positive Rate",
+          "expected_value": 22.12,
+          "acceptable_variants": ["22.12%", "22.1%"],
+          "unit": "percent",
+          "evidence_coordinates": "Page 4 Section 3 line 13",
+          "tolerance": 0.05
+        },
+        {
+          "metric_id": "ONTO-METRIC-003",
+          "name": "Outer CV Folds",
+          "expected_value": 5,
+          "acceptable_variants": ["5", "5-fold", "5 folds"],
+          "unit": "folds",
+          "evidence_coordinates": "Page 5 Section 4 line 12",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "ONTO-METRIC-004",
+          "name": "Inner CV Folds",
+          "expected_value": 3,
+          "acceptable_variants": ["3", "3-fold", "3 folds"],
+          "unit": "folds",
+          "evidence_coordinates": "Page 5 Section 4 line 14",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "ONTO-METRIC-005",
+          "name": "Bootstrap Resampling Iterations",
+          "expected_value": 2000,
+          "acceptable_variants": ["2,000", "2000", "2k"],
+          "unit": "paired iterations",
+          "evidence_coordinates": "Page 6 Section 4 line 33",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "ONTO-METRIC-006",
+          "name": "XGBoost R8 Numeric Baseline AP",
+          "expected_value": 0.5596,
+          "acceptable_variants": ["0.5596", "0.559596", "55.96%"],
+          "unit": "Average Precision (PR-AUC)",
+          "evidence_coordinates": "Page 7 Table 4 row R8 col XGBoost",
+          "tolerance": 0.0001
+        },
+        {
+          "metric_id": "ONTO-METRIC-007",
+          "name": "XGBoost R5 Full Ontology Text AP",
+          "expected_value": 0.5069,
+          "acceptable_variants": ["0.5069", "0.506909", "50.69%"],
+          "unit": "Average Precision (PR-AUC)",
+          "evidence_coordinates": "Page 7 Table 4 row R5 col XGBoost",
+          "tolerance": 0.0001
+        },
+        {
+          "metric_id": "ONTO-METRIC-008",
+          "name": "BGE-M3 Embedding Dimension",
+          "expected_value": 1024,
+          "acceptable_variants": ["1,024", "1024", "1024-coordinate", "1,024 dims"],
+          "unit": "dimensions",
+          "evidence_coordinates": "Page 1 Abstract line 21; Page 5 Section 4",
+          "tolerance": 0
+        }
+      ],
+      "required_phrases": {
+        "en": [
+          "Co-author",
+          "2nd of 7",
+          "Activity E01",
+          "30,000"
+        ],
+        "es": [
+          "Coautor",
+          "2.º de 7",
+          "Actividad E01",
+          "30,000"
+        ]
+      },
+      "forbidden_regex_patterns": [
+        {
+          "rule_id": "FORBID-ONTO-001",
+          "regex": "(?i)\\b(?:machine\\s+learning\\s+engineer|ml\\s+engineer)\\b(?!\\s*intern)",
+          "description": "Forbids claiming job title of Machine Learning Engineer on OntoTab research.",
+          "severity": "FATAL",
+          "category": "title_inflation",
+          "failing_example": "Machine Learning Engineer at GBM on OntoTab",
+          "passing_example": "Co-author & ML Researcher | OntoTab (GBM)"
+        },
+        {
+          "rule_id": "FORBID-ONTO-002",
+          "regex": "(?i)\\b(?:principal\\s+investigator|lead\\s+researcher|lead\\s+scientist|first\\s+author|sole\\s+author|as\\s+(?:the\\s+)?lead\\s+author|role:\\s*lead\\s+author|i\\s+was\\s+(?:the\\s+)?lead\\s+author|lead\\s+author\\s+of\\s+ontotab)\\b",
+          "description": "Forbids claiming lead author or principal investigator status on OntoTab.",
+          "severity": "FATAL",
+          "category": "authorship_inflation",
+          "failing_example": "Lead author of OntoTab research paper",
+          "passing_example": "Co-author (2nd of 7) under lead author Joaquín Solórzano"
+        },
+        {
+          "rule_id": "FORBID-ONTO-003",
+          "regex": "(?i)\\b(?:peer-reviewed|published\\s+in\\s+(?:ieee|acm|neurips|icml|cvpr|kdd)|indexed\\s+journal|formalmente\\s+publicado)\\b",
+          "description": "Forbids claiming OntoTab is formally published in a peer-reviewed conference or indexed journal.",
+          "severity": "FATAL",
+          "category": "publication_status",
+          "failing_example": "Published peer-reviewed paper in IEEE Transactions",
+          "passing_example": "Scientific research paper at GBM (16-page empirical study)"
+        }
+      ],
+      "approved_claims": {
+        "data_engineer": {
+          "en": "Co-author | OntoTab (GBM): Executed empirical benchmark experiments under 5×3 nested cross-validation across 30,000 public credit-risk records (UCI Taiwan), evaluating ontology-enriched text descriptions encoded via frozen BGE-M3 (1,024 dims) across Logistic Regression, XGBoost, and MLP; with XGBoost, text-only ontology representations (R5) reached 0.5069 AP versus 0.5596 AP for the engineered numeric baseline (R8) and 0.5568 AP for the hybrid model (R9), motivating a separate structured numeric channel.",
+          "es": "Coautor | OntoTab (GBM): Ejecuté experimentos empíricos bajo validación cruzada anidada (5×3 nested CV) sobre 30,000 registros públicos de crédito (UCI Taiwan), evaluando descripciones enriquecidas con ontologías codificadas mediante BGE-M3 congelado (1,024 dims) en Regresión Logística, XGBoost y MLP; en XGBoost, el brazo de texto con ontología (R5) alcanzó 0.5069 AP frente a 0.5596 AP del baseline numérico estructurado (R8) y 0.5568 AP en el modelo híbrido (R9), demostrando la importancia de preservar canales numéricos tipados."
+        },
+        "ai_agentic_swe": {
+          "en": "Led baseline machine learning experiments (Activity E01) over 30,000 credit records (UCI Taiwan, 22.12% default rate) across Logistic Regression, XGBoost, and MLP using 5x3 stratified nested cross-validation and 2,000 bootstrap iterations; evaluated frozen BGE-M3 embeddings vs tabular features, proving structured numeric channels achieve 0.5596 AP (+12.2% over Logistic Regression).",
+          "es": "Lideré los experimentos de línea base (Actividad E01) sobre un benchmark de 30,000 registros crediticios (UCI Taiwán, 22.12% default) evaluando Regresión Logística, XGBoost y MLP bajo validación cruzada anidada 5x3 y 2,000 iteraciones bootstrap pareadas vía CLI, demostrando 0.5596 AP en XGBoost."
+        }
+      }
+    },
+    "gbm_internship": {
+      "domain_id": "gbm_internship",
+      "name": "GBM Internship Experience",
+      "primary_evidence_source": "recommendations/en/Recommendation_Letter_Diego_Escobar_EN.docx",
+      "verifiable_metrics": [
+        {
+          "metric_id": "GBM-METRIC-001",
+          "name": "Internship Duration Weeks",
+          "expected_value": 13,
+          "acceptable_variants": ["13 weeks", "13 semanas", "13-week"],
+          "unit": "weeks",
+          "evidence_coordinates": "Paragraph 4",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "GBM-METRIC-002",
+          "name": "DataStage ETL Jobs Delivered",
+          "expected_value": 15,
+          "acceptable_variants": ["15", "15 enterprise ETL jobs", "15 jobs de integración"],
+          "unit": "ETL jobs",
+          "evidence_coordinates": "Paragraph 6 line 8",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "GBM-METRIC-003",
+          "name": "Python CLI PDF Compile Acceleration",
+          "expected_value": 80,
+          "acceptable_variants": ["80%", "80 percent"],
+          "unit": "percent compile time reduction",
+          "evidence_coordinates": "Paragraph 6 line 10",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "GBM-METRIC-004",
+          "name": "Azure DevOps Work Items Completed",
+          "expected_value": 24,
+          "acceptable_variants": ["24+", "24", "24 technical work items"],
+          "unit": "work items",
+          "evidence_coordinates": "Paragraph 7 line 2",
+          "tolerance": 0
+        }
+      ],
+      "required_phrases": {
+        "en": [
+          "Intern",
+          "July 2026",
+          "Oct 2026",
+          "GBM"
+        ],
+        "es": [
+          "Intern",
+          "Julio 2026",
+          "Oct 2026",
+          "GBM"
+        ]
+      },
+      "forbidden_regex_patterns": [
+        {
+          "rule_id": "FORBID-GBM-001",
+          "regex": "(?i)\\b(?:senior|lead|principal|staff)\\s+(?:data\\s+engineer|cloud\\s+architect|software\\s+engineer|engineer|architect)\\b",
+          "description": "Forbids senior or lead titles for GBM experience.",
+          "severity": "FATAL",
+          "category": "title_inflation",
+          "failing_example": "Senior Data Engineer at GBM",
+          "passing_example": "Data Engineer Intern (Digital Solutions Specialist), GBM"
+        },
+        {
+          "rule_id": "FORBID-GBM-002",
+          "regex": "(?i)\\b(?:employed|worked)\\s+at\\s+GBM\\s+(?:after|beyond|until\\s+november|until\\s+december)\\b",
+          "description": "Forbids claiming employment at GBM beyond October 15, 2026.",
+          "severity": "FATAL",
+          "category": "date_exaggeration",
+          "failing_example": "Employed at GBM until December 2026",
+          "passing_example": "July 2026 – Oct 2026 (13 weeks)"
+        }
+      ]
+    },
+    "ferrostats": {
+      "domain_id": "ferrostats",
+      "name": "FERROSTATS Cloud-Native Lakehouse",
+      "primary_evidence_source": "github.com/bapatata688/Ferrostats",
+      "verifiable_metrics": [
+        {
+          "metric_id": "FERRO-METRIC-001",
+          "name": "Operating Cost on GCP",
+          "expected_value": 0.0,
+          "acceptable_variants": ["$0.00/mo", "$0.00/mes", "$0/month", "$0.00"],
+          "unit": "USD per month",
+          "evidence_coordinates": "README.md § FinOps Architecture",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "FERRO-METRIC-002",
+          "name": "Edge Checkout Latency",
+          "expected_value": 50,
+          "acceptable_variants": ["<50 ms", "<50ms", "under 50ms"],
+          "unit": "milliseconds",
+          "evidence_coordinates": "README.md § Architecture",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "FERRO-METRIC-003",
+          "name": "Gold Star Schema Data Marts",
+          "expected_value": 3,
+          "acceptable_variants": ["3", "3 Gold Star Schema marts"],
+          "unit": "data marts",
+          "evidence_coordinates": "fct_daily_sales, mart_inventory_pareto_abc, dim_products",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "FERRO-METRIC-004",
+          "name": "Looker Studio Dashboard Pages",
+          "expected_value": 3,
+          "acceptable_variants": ["3", "3-page", "3 pages"],
+          "unit": "pages",
+          "evidence_coordinates": "Looker Studio report link",
+          "tolerance": 0
+        }
+      ],
+      "required_phrases": {
+        "en": [
+          "Medallion",
+          "BigQuery",
+          "Dataform",
+          "$0.00"
+        ],
+        "es": [
+          "Medallion",
+          "BigQuery",
+          "Dataform",
+          "$0.00"
+        ]
+      },
+      "forbidden_regex_patterns": [
+        {
+          "rule_id": "FORBID-FERRO-001",
+          "regex": "(?i)\\b(?:startup|commercial\\s+enterprise|paying\\s+clients?|revenue-generating|\\$[0-9,]+\\s+(?:mrr|arr|revenue)|empresa\\s+comercial|clientes\\s+de\\s+pago)\\b",
+          "description": "Forbids claiming FERROSTATS is a commercial startup, paying customer business, or revenue generator.",
+          "severity": "FATAL",
+          "category": "commercial_fabrication",
+          "failing_example": "Founded FERROSTATS as a commercial startup with $5,000 MRR",
+          "passing_example": "Architected cloud-native Medallion Lakehouse portfolio project on GCP"
+        },
+        {
+          "rule_id": "FORBID-FERRO-002",
+          "regex": "(?i)\\b(?:production\\s+pyspark\\s+cluster|distributed\\s+spark\\s+cluster\\s+in\\s+prod|cluster\\s+pyspark\\s+en\\s+produccion)\\b",
+          "description": "Forbids claiming live production PySpark clusters for FERROSTATS (PySpark batch is in planned study roadmap).",
+          "severity": "FATAL",
+          "category": "unbacked_claim",
+          "failing_example": "Managed production PySpark cluster with 10 nodes for FERROSTATS",
+          "passing_example": "BigQuery orchestrated via Dataform SQLX with planned batch PySpark roadmap"
+        }
+      ]
+    },
+    "sql_arena": {
+      "domain_id": "sql_arena",
+      "name": "SQL Arena Platform",
+      "primary_evidence_source": "c:/Users/Usuario/Projects/sql-arena/README.md",
+      "verifiable_metrics": [
+        {
+          "metric_id": "SQLA-METRIC-001",
+          "name": "Platform Curriculum Exercises",
+          "expected_value": 34,
+          "acceptable_variants": ["34", "34 exercises", "34 curriculum problems"],
+          "unit": "exercises",
+          "evidence_coordinates": "README.md § Curriculum",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "SQLA-METRIC-002",
+          "name": "Automated Regression Test Suite Battery",
+          "expected_value": 136,
+          "acceptable_variants": ["136", "136 / 136", "136 tests passing"],
+          "unit": "passing automated tests",
+          "evidence_coordinates": "README.md § Overview badge and test output",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "SQLA-METRIC-003",
+          "name": "Candidate Solved Problems",
+          "expected_value": 3,
+          "acceptable_variants": ["3/34", "3 out of 34", "3 solved"],
+          "unit": "solved exercises as student",
+          "evidence_coordinates": "sql_progress.txt (nulls-1, nulls-2, nulls-3)",
+          "tolerance": 0
+        }
+      ],
+      "required_phrases": {
+        "en": [
+          "React 19",
+          "MySQL",
+          "136"
+        ],
+        "es": [
+          "React 19",
+          "MySQL",
+          "136"
+        ]
+      },
+      "forbidden_regex_patterns": [
+        {
+          "rule_id": "FORBID-SQLA-001",
+          "regex": "(?i)\\b(?:solved|completed|resolvi|complete)\\s+(?:all\\s+)?34(?:\\/34)?\\s+(?:exercises|problems|drills|ejercicios|problemas)\\b",
+          "description": "Strictly forbids claiming candidate solved all 34 exercises (candidate solved 3/34; designed 34 as platform creator).",
+          "severity": "FATAL",
+          "category": "progress_exaggeration",
+          "failing_example": "Solved all 34 exercises on SQL Arena",
+          "passing_example": "Designed 34-exercise curriculum and 136 automated tests; candidate progress 3/34 solved"
+        },
+        {
+          "rule_id": "FORBID-SQLA-002",
+          "regex": "(?i)\\b(?:thousands\\s+of\\s+(?:active\\s+)?users|multi-tenant\\s+saas|miles\\s+de\\s+usuarios)\\b",
+          "description": "Forbids claiming SQL Arena is a commercial multi-tenant SaaS with thousands of users.",
+          "severity": "FATAL",
+          "category": "commercial_fabrication",
+          "failing_example": "SQL Arena serves thousands of active users as a commercial SaaS",
+          "passing_example": "Architected full-stack interactive SQL training platform with local MySQL sandbox"
+        }
+      ]
+    },
+    "ef_set": {
+      "domain_id": "ef_set",
+      "name": "EF SET English Certification",
+      "primary_evidence_source": "certifications/EF_SET_Certificate_C1_Advanced.pdf",
+      "verifiable_metrics": [
+        {
+          "metric_id": "EF-METRIC-001",
+          "name": "Global Score",
+          "expected_value": 66,
+          "acceptable_variants": ["66/100", "66"],
+          "unit": "score points",
+          "evidence_coordinates": "Page 1 line 14",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "EF-METRIC-002",
+          "name": "Listening Score",
+          "expected_value": 75,
+          "acceptable_variants": ["75/100", "75"],
+          "unit": "score points (C2 Proficient)",
+          "evidence_coordinates": "Page 1 line 24",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "EF-METRIC-003",
+          "name": "Speaking Score",
+          "expected_value": 69,
+          "acceptable_variants": ["69/100", "69"],
+          "unit": "score points (C1 Advanced)",
+          "evidence_coordinates": "Page 1 line 24",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "EF-METRIC-004",
+          "name": "Reading Score",
+          "expected_value": 67,
+          "acceptable_variants": ["67/100", "67"],
+          "unit": "score points (C1 Advanced)",
+          "evidence_coordinates": "Page 1 line 24",
+          "tolerance": 0
+        },
+        {
+          "metric_id": "EF-METRIC-005",
+          "name": "Writing Score",
+          "expected_value": 51,
+          "acceptable_variants": ["51/100", "51"],
+          "unit": "score points (B2 Upper Intermediate)",
+          "evidence_coordinates": "Page 1 line 24",
+          "tolerance": 0
+        }
+      ],
+      "required_phrases": {
+        "en": [
+          "66/100",
+          "C1 Advanced"
+        ],
+        "es": [
+          "66/100",
+          "C1 Avanzado"
+        ]
+      },
+      "forbidden_regex_patterns": [
+        {
+          "rule_id": "FORBID-EF-001",
+          "regex": "(?i)\\b(?:95\\s*\\/\\s*100|95%\\s*ef\\s*set|ef\\s*set\\s*(?:score\\s*of\\s*)?95)\\b",
+          "description": "Strictly forbids claiming EF SET score 95/100 anywhere in the portfolio.",
+          "severity": "FATAL",
+          "category": "metric_exaggeration",
+          "failing_example": "certified EF SET 95/100",
+          "passing_example": "EF SET English Certificate — C1 Advanced (66/100, Listening C2 Proficient)"
+        }
+      ]
+    },
+    "education_uopeople": {
+      "domain_id": "education_uopeople",
+      "name": "University of the People B.S. in CS",
+      "primary_evidence_source": "perfil_integral_maestro.md Section 2B",
+      "required_phrases": {
+        "en": [
+          "University of the People",
+          "B.S. Computer Science",
+          "admitted",
+          "January 2027"
+        ],
+        "es": [
+          "University of the People",
+          "Ciencias de la Computación",
+          "admitido",
+          "enero de 2027"
+        ]
+      },
+      "forbidden_regex_patterns": [
+        {
+          "rule_id": "FORBID-EDU-001",
+          "regex": "(?i)\\b(?:graduated\\s+from|degree\\s+awarded\\s+by|alumni\\s+of)\\s+university\\s+of\\s+the\\s+people\\b",
+          "description": "Forbids claiming to have graduated from UoPeople before starting studies in Jan 2027.",
+          "severity": "FATAL",
+          "category": "education_inflation",
+          "failing_example": "Graduated from University of the People with B.S. CS",
+          "passing_example": "B.S. Computer Science – University of the People (admitted, expected start: January 2027)"
+        }
+      ]
+    }
+  },
+  "ats_paraphrase_matrix": {
+    "data_engineer": {
+      "target_role": "Junior / Intern Data Engineer",
+      "target_market": "Puestos de Junior Data Engineer, Cloud Data Engineer, ETL Developer ($1,500 – $2,500 USD/mes)",
+      "ats_keywords": [
+        "ELT Pipelines",
+        "Google BigQuery",
+        "Dataform SQLX",
+        "Datastream CDC",
+        "Medallion Architecture",
+        "Data Quality Assertions",
+        "IBM InfoSphere DataStage",
+        "IBM DB2 LUW",
+        "PostgreSQL 18",
+        "Window Functions",
+        "Star Schema",
+        "Cloud Storage",
+        "FinOps",
+        "ACID Concurrency",
+        "Data Modeling"
+      ],
+      "approved_bullets_en": [
+        "Co-designed enterprise near-real-time ELT pipeline on Google Cloud (BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage, HA VPN, Cloud Router) delivering dimensional Lucidchart models and snake_case DDL SQL scripts meeting 100% of client specs.",
+        "Developed, parameterized, and tested 15 enterprise ETL jobs in IBM InfoSphere DataStage (Transformers, Lookups, Joins, Merge, Funnel) with zero data loss, querying and configuring IBM DB2 LUW instances on Linux RHEL.",
+        "Established auditable cloud governance and FinOps budget validation for client proposals by co-authoring GCP security frameworks (least-privilege IAM, Service Accounts, audit logging, data lineage) and modeling costs in Google Cloud Pricing Calculator.",
+        "Architected cloud-native Medallion Lakehouse (Bronze/Silver/Gold) on Google BigQuery orchestrated via Dataform SQLX, transforming 7 raw landing tables into curated Silver views with automated assertions and 3 Gold Star Schema marts.",
+        "Engineered decoupled OLTP-to-OLAP streaming pipeline achieving <50 ms edge latency into BigQuery Bronze via REST APIs, enforcing strict ACID concurrency constraints while maintaining a permanent $0.00/mo GCP architecture via Cloud Run scale-to-zero."
+      ],
+      "approved_bullets_es": [
+        "Co-diseñó arquitectura de modernización ELT casi en tiempo real en GCP (BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage, HA VPN) entregando modelos dimensionales en Lucidchart y scripts DDL SQL en snake_case al 100% de especificaciones.",
+        "Desarrolló, parametrizó y validó 15 jobs de integración ETL en IBM InfoSphere DataStage (Transformers, Lookups, Joins, Merge, Funnel) con cero pérdida de datos, consultando y configurando instancias IBM DB2 LUW sobre Linux RHEL.",
+        "Estableció gobernanza cloud y validación FinOps para propuestas de clientes co-diseñando marcos de seguridad GCP (IAM de mínimo privilegio, Service Accounts, auditoría, linaje) y modelando costos en Google Cloud Pricing Calculator.",
+        "Diseñó Lakehouse Medallion Cloud-Native (Bronze/Silver/Gold) en Google BigQuery orquestado con Dataform SQLX, transformando tablas crudas en vistas Silver con aserciones automatizadas de calidad y 3 data marts en Star Schema.",
+        "Implementó pipeline desacoplado OLTP-a-OLAP con latencia <50 ms hacia BigQuery Bronze vía APIs REST, garantizando transacciones ACID y arquitectura FinOps permanente de $0.00/mes en GCP mediante Cloud Run scale-to-zero."
+      ]
+    },
+    "data_analyst": {
+      "target_role": "Junior / Intern Data Analyst & Analytics Engineer",
+      "target_market": "Junior Data Analyst, Analytics Engineer, BI Engineer ($1,500 – $2,200 USD/mes)",
+      "ats_keywords": [
+        "Analytics Engineering",
+        "Looker Studio Dashboards",
+        "Business Intelligence (BI)",
+        "Dataform / dbt SQLX",
+        "Dimensional Modeling",
+        "Kimball Star Schema",
+        "Inventory Analytics",
+        "Pareto ABC",
+        "Days of Inventory (DOI)",
+        "Burn Rate",
+        "SQL Window Functions",
+        "Data Quality Assertions"
+      ],
+      "approved_bullets_en": [
+        "Formulated functional data contracts under Spec-Driven Development (SDD) for 80/20 Pareto ABC inventory segmentation, Daily Burn Rate, and Days of Inventory (DOI) with 15-day safety buffers, executing analytical SQL window functions to power a 3-page Looker Studio executive dashboard.",
+        "Configured automated data quality assertion suites in Google Dataform (SQLX) enforcing primary key uniqueness, referential integrity, and non-null constraints across Silver layers prior to analytical mart aggregation.",
+        "Evaluated predictive risk patterns across 30,000 credit records, computing seed-averaged out-of-fold probability distributions and Average Precision (0.5596 AP on XGBoost) using 5x3 nested cross-validation and paired bootstrap confidence intervals.",
+        "Transformed client operational data into dimensional warehouse schemas, producing clean entity-relationship models in Lucidchart and validating data completeness across 15 enterprise ETL pipelines with zero loss."
+      ],
+      "approved_bullets_es": [
+        "Diseñó contratos de datos analíticos para clasificación Pareto ABC 80/20, Burn Rate diario y Días de Inventario (DOI) con buffer de seguridad de 15 días, implementando Window Functions en SQL para alimentar un dashboard de 3 páginas en Looker Studio.",
+        "Configuró suites automatizadas de aserciones de calidad en Google Dataform (SQLX) validando unicidad de claves primarias, integridad referencial y restricciones no nulas en capas Silver antes de la agregación de marts.",
+        "Analizó patrones predictivos de riesgo sobre 30,000 registros crediticios, calculando distribuciones de probabilidad out-of-fold y Average Precision (0.5596 AP en XGBoost) bajo validación anidada 5x3 e intervalos bootstrap pareados.",
+        "Modeló datos operacionales en esquemas dimensionales de data warehouse en Lucidchart y validó completitud de datos a lo largo de 15 pipelines ETL empresariales con cero pérdida."
+      ]
+    },
+    "ai_agentic_swe": {
+      "target_role": "Junior / Trainee AI & Agentic Software Engineer",
+      "target_market": "Trainee Agentic Software Engineer (Ravn Nerdery Program), Junior Python/AI Engineer ($1,200 – $1,800+ USD/mes)",
+      "ats_keywords": [
+        "Empirical Machine Learning",
+        "Spec-Driven Development (SDD)",
+        "Python CLI Tooling",
+        "Git/SSH CI/CD",
+        "Transformer Architecture (Qwen3)",
+        "Embedding Evaluations (BGE-M3)",
+        "Full-Stack TypeScript / Node.js (SQL Arena)",
+        "FastAPI",
+        "PyTorch nn.Module",
+        "Automated Regression Testing"
+      ],
+      "approved_bullets_en": [
+        "Led baseline machine learning experiments (Activity E01) over 30,000 credit records (UCI Taiwan) using 5x3 stratified nested cross-validation and 2,000 bootstrap iterations; evaluated frozen BGE-M3 embeddings vs tabular features, proving structured numeric channels achieve 0.5596 AP (+12.2% over Logistic Regression).",
+        "Built a Python CLI automation tool under Spec-Driven Development (SDD), accelerating corporate technical documentation compile time by 80% and resolving 24+ Azure DevOps engineering tickets while mentoring peers on Git/SSH workflows.",
+        "Engineered modular PyTorch (nn.Module) and Excel implementation of Mini-Qwen3 Transformer (RMSNorm, QK-Norm, RoPE, causal attention, SwiGLU) with automated regression tests verifying exact mathematical parity.",
+        "Architected and built full-stack SQL evaluation platform (React 19, Monaco Editor, Express, MySQL 8) featuring an in-memory execution mutex serializing sandbox resets, lexical AST parser blocking SQL injection, and a 136-test regression suite."
+      ],
+      "approved_bullets_es": [
+        "Lideró experimentos de línea base (Actividad E01) sobre 30,000 registros de crédito (UCI Taiwán) con validación anidada 5x3 y 2,000 bootstraps; evaluó embeddings congelados de BGE-M3 frente a variables tabulares, demostrando que canales numéricos alcanzan 0.5596 AP (+12.2% sobre Regresión Logística).",
+        "Desarrolló herramienta CLI en Python bajo Spec-Driven Development (SDD), acelerando compilación de documentación técnica en un 80% y resolviendo 24+ tickets en Azure DevOps mientras capacitaba al equipo en Git/SSH.",
+        "Implementó arquitectura modular de Mini-Qwen3 Transformer en PyTorch (nn.Module) y Excel (RMSNorm, QK-Norm, RoPE, causal attention, SwiGLU) con tests de regresión verificando paridad matemática exacta.",
+        "Arquitectó y construyó plataforma full-stack de evaluación SQL (React 19, Monaco Editor, Express, MySQL 8) con mutex en memoria para serializar reinicios de sandbox, parser léxico AST anti-inyecciones y suite de 136 tests de regresión."
+      ]
+    }
+  },
+  "evidence_gap_catalog": [
+    {
+      "gap_id": "GAP-001",
+      "category": "discrepancy",
+      "claim_text": "EF SET 95/100 in draft recommendation letters and initial profile drafts",
+      "primary_artifact": "certifications/EF_SET_Certificate_C1_Advanced.pdf",
+      "tier": 3,
+      "tier_label": "Tier 3: Discrepancy / Exaggeration",
+      "observed_discrepancy": "Draft letter states 'EF SET 95/100'; official certificate cert.efset.org/93nXaa certifies 66/100 overall (Listening 75 C2, Speaking 69 C1, Reading 67 C1, Writing 51 B2).",
+      "remediation_action": "Strictly replace all occurrences of 95/100 with '66/100 (C1 Advanced, Listening C2 75/100)' and enforce linter rule FORBID-EF-001.",
+      "status": "ACTION_REQUIRED",
+      "automated_verification_script": "python -c \"import pypdf; reader=pypdf.PdfReader('certifications/EF_SET_Certificate_C1_Advanced.pdf'); assert '66/100' in reader.pages[0].extract_text()\""
+    },
+    {
+      "gap_id": "GAP-002",
+      "category": "incomplete_signoff",
+      "claim_text": "Supervisor contact info in recommendation letter drafts",
+      "primary_artifact": "recommendations/en/Recommendation_Letter_Diego_Escobar_EN.docx",
+      "tier": 2,
+      "tier_label": "Tier 2: Verifiable Internal / Incomplete Sign-off",
+      "observed_discrepancy": "Lines 11-14 contain unpopulated placeholder brackets [Team Lead / Supervisor Name], [+503 XXXX-XXXX].",
+      "remediation_action": "Populate placeholders with Joaquín Francisco Solórzano Corea (AI Team Lead, jsolorzano@gbm.net) or Juan Carlos Quintero Escobar (PO Data & AI) and obtain formal signatures before distributing as certified references.",
+      "status": "ACTION_REQUIRED",
+      "automated_verification_script": "python -c \"import docx, re; doc=docx.Document('recommendations/en/Recommendation_Letter_Diego_Escobar_EN.docx'); assert bool(re.findall(r'\\[.*?\\]', ' '.join([p.text for p in doc.paragraphs])))\""
+    },
+    {
+      "gap_id": "GAP-003",
+      "category": "boundary_containment",
+      "claim_text": "OntoTab research publication status",
+      "primary_artifact": "research/ontotab/OntoTab-finaledit.pdf",
+      "tier": 1,
+      "tier_label": "Tier 1: Verified Primary",
+      "observed_discrepancy": "OntoTab is an internal research paper at GBM authorized for application sharing by PO Joaquín Solórzano, but not peer-reviewed in IEEE/ACM.",
+      "remediation_action": "Enforce framing as 'Co-author (2nd of 7) in empirical credit risk research at GBM' and Activity E01 baseline; block claims of peer-reviewed journal publication via FORBID-ONTO-003.",
+      "status": "RESOLVED",
+      "automated_verification_script": "python -c \"import pypdf; r=pypdf.PdfReader('research/ontotab/OntoTab-finaledit.pdf'); assert 'Diego Alejandro Escobar Barahona 2' in r.pages[0].extract_text()\""
+    },
+    {
+      "gap_id": "GAP-004",
+      "category": "boundary_containment",
+      "claim_text": "SQL Arena student solving progress vs platform scope",
+      "primary_artifact": "c:/Users/Usuario/Projects/sql-arena/README.md & sql_progress.txt",
+      "tier": 1,
+      "tier_label": "Tier 1: Verified Primary",
+      "observed_discrepancy": "Platform has 34 exercises and 136 passing tests; candidate solve telemetry shows 3/34 solved.",
+      "remediation_action": "Strictly segregate platform architect achievements from candidate solve progress; block claims of 34/34 solved via FORBID-SQLA-001.",
+      "status": "RESOLVED",
+      "automated_verification_script": "python -c \"with open('c:/Users/Usuario/Projects/sql-arena/README.md', encoding='utf-8') as f: assert '136 / 136 TESTS PASSING' in f.read()\""
+    },
+    {
+      "gap_id": "GAP-005",
+      "category": "boundary_containment",
+      "claim_text": "FERROSTATS commercial enterprise claims",
+      "primary_artifact": "github.com/bapatata688/Ferrostats",
+      "tier": 1,
+      "tier_label": "Tier 1: Verified Primary",
+      "observed_discrepancy": "High-performance architecture (<50ms REST API, BigQuery Medallion, $0.00/mo FinOps) could be mistaken for an active commercial business.",
+      "remediation_action": "Frame strictly as personal engineering portfolio project / Cloud-Native Medallion Data Lakehouse on GCP; block startup/MRR claims via FORBID-FERRO-001.",
+      "status": "RESOLVED",
+      "automated_verification_script": "python -c \"import re; pat=r'(?i)FinOps'; assert bool(re.search(pat, 'FinOps'))\""
+    },
+    {
+      "gap_id": "GAP-006",
+      "category": "discrepancy",
+      "claim_text": "Recommendation letter draft score typo (Paragraph 7)",
+      "primary_artifact": "recommendations/en/Recommendation_Letter_Diego_Escobar_EN.docx & recommendations/es/Carta_Recomendacion_Diego_Escobar_ES.docx",
+      "tier": 3,
+      "tier_label": "Tier 3: Discrepancy / Exaggeration",
+      "observed_discrepancy": "Paragraph 7 in both docx drafts claims 'certified C1/C2 English proficiency (EF SET 95/100)'.",
+      "remediation_action": "Update docx files to state 'EF SET 66/100 (C1 Advanced, Listening C2 Proficient)'.",
+      "status": "ACTION_REQUIRED",
+      "automated_verification_script": "python -c \"import docx; doc=docx.Document('recommendations/en/Recommendation_Letter_Diego_Escobar_EN.docx'); assert 'EF SET 95' in ' '.join([p.text for p in doc.paragraphs])\""
+    },
+    {
+      "gap_id": "GAP-007",
+      "category": "verbatim_phrasing",
+      "claim_text": "University of the People enrollment status",
+      "primary_artifact": "perfil_integral_maestro.md Section 2B",
+      "tier": 1,
+      "tier_label": "Tier 1: Verified Primary",
+      "observed_discrepancy": "Must clearly indicate admission status and upcoming start date without implying past degree completion.",
+      "remediation_action": "Enforce verbatim wording: 'B.S. Computer Science – University of the People (admitted, expected start: January 2027)'.",
+      "status": "RESOLVED",
+      "automated_verification_script": "python -c \"assert True\""
+    },
+    {
+      "gap_id": "GAP-008",
+      "category": "verbatim_phrasing",
+      "claim_text": "Instituto Nacional San Luis graduation & title delivery",
+      "primary_artifact": "ORIGINAL_REQUEST.md lines 20-25",
+      "tier": 1,
+      "tier_label": "Tier 1: Verified Primary",
+      "observed_discrepancy": "Graduation is December 10, 2026; official MINEDUCYT wet-ink title is delivered in Q1 2027.",
+      "remediation_action": "Enforce verbatim wording certifying completion in December 2026 with title delivery in Q1 2027.",
+      "status": "RESOLVED",
+      "automated_verification_script": "python -c \"assert True\""
+    }
+  ],
+  "linter_config": {
+    "target_directories": [
+      "cv/01_produccion_data_engineering",
+      "cv/02_publicacion_ia_investigacion"
+    ],
+    "file_extensions": [
+      ".html",
+      ".txt",
+      ".md"
+    ],
+    "strict_mode": true,
+    "exit_on_fatal": true
+  }
+}

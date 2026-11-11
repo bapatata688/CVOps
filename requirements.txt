@@ -1,0 +1,16 @@
+# =============================================================================
+# master_cv: Python Core Dependencies
+# Target Python Version: >=3.10, <=3.13 (Validated on Python 3.12.10)
+# =============================================================================
+
+# Core Headless PDF Compilation Engine
+# - On Linux: Native import with Pango/Cairo.
+# - On Windows: Handled via Scoop CLI wrapper or native MSYS2 GTK3.
+weasyprint>=60.0
+
+# Programmatic 1-Page Geometry Assertion & PDF Inspection
+# Used by scripts/verify_geometry.py to assert len(pages) == 1 and mediabox Letter
+pypdf>=4.0.0
+
+# HTML Parsing & AST Traversal for Ethical Truthfulness Linter
+beautifulsoup4>=4.12.0

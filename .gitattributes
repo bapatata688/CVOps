@@ -1,0 +1,24 @@
+# Auto-detect text files and normalize line endings to LF
+* text=auto eol=lf
+
+# Code and markup
+*.py text diff=python eol=lf
+*.html text diff=html eol=lf
+*.css text diff=css eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Windows scripts retain CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets (prevent line ending corruption and diffing)
+*.pdf binary
+*.docx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
