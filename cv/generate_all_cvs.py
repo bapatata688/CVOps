@@ -290,7 +290,7 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &mdash; University of the People</td>
         <td class="right">Admitted | Expected Start: 2027</td>
       </tr>
       <tr>
@@ -377,7 +377,7 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &mdash; University of the People</td>
         <td class="right">Admitido | Inicio esperado: 2027</td>
       </tr>
       <tr>
@@ -474,7 +474,7 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &mdash; University of the People</td>
         <td class="right">Admitted | Expected Start: 2027</td>
       </tr>
       <tr>
@@ -571,7 +571,7 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &mdash; University of the People</td>
         <td class="right">Admitido | Inicio esperado: 2027</td>
       </tr>
       <tr>
