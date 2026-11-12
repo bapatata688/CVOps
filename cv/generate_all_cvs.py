@@ -247,7 +247,7 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
     <table class="entry-header">
       <tr>
         <td class="left"><strong><a href="https://github.com/bapatata688/Ferrostats">FERROSTATS</a> &mdash; Cloud-Native Medallion Data Lakehouse &amp; Streaming Pipeline on GCP</strong></td>
-        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app">Live App</a></td>
+        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app/">Live App</a></td>
       </tr>
     </table>
     <ul>
@@ -290,12 +290,8 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; Pasadena, California, USA</td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
         <td class="right">Admitted | Term 3, 2027</td>
-      </tr>
-      <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong></td>
-        <td class="right">WSCUC-accredited institution | 100% Online</td>
       </tr>
       <tr>
         <td class="left"><strong>Technical Baccalaureate in Software Development</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>GPA: 9.5/10.0</em></td>
@@ -334,7 +330,7 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
     <table class="entry-header">
       <tr>
         <td class="left"><strong><a href="https://github.com/bapatata688/Ferrostats">FERROSTATS</a> &mdash; Data Lakehouse Medall&oacute;n Cloud-Native y Pipeline de Ingesta Streaming en GCP</strong></td>
-        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app">App en Vivo</a></td>
+        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app/">App en Vivo</a></td>
       </tr>
     </table>
     <ul>
@@ -377,12 +373,8 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; Pasadena, California, USA</td>
-        <td class="right">Admitted | Term 3, 2027</td>
-      </tr>
-      <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong></td>
-        <td class="right">WSCUC-accredited institution | 100% Online</td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
+        <td class="right">Admitido | Term 3, 2027</td>
       </tr>
       <tr>
         <td class="left"><strong>Bachillerato T&eacute;cnico Vocacional en Desarrollo de Software</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>Promedio: 9.5/10.0</em></td>
@@ -433,7 +425,7 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
     <table class="entry-header">
       <tr>
         <td class="left"><strong><a href="https://github.com/bapatata688/Ferrostats">FERROSTATS</a> &mdash; Cloud-Native Medallion Data Lakehouse &amp; Streaming Pipeline on GCP</strong></td>
-        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app">Live App</a></td>
+        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app/">Live App</a></td>
       </tr>
     </table>
     <ul>
@@ -474,12 +466,8 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; Pasadena, California, USA</td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
         <td class="right">Admitted | Term 3, 2027</td>
-      </tr>
-      <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong></td>
-        <td class="right">WSCUC-accredited institution | 100% Online</td>
       </tr>
       <tr>
         <td class="left"><strong>Technical Baccalaureate in Software Development</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>GPA: 9.5/10.0</em></td>
@@ -530,7 +518,7 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
     <table class="entry-header">
       <tr>
         <td class="left"><strong><a href="https://github.com/bapatata688/Ferrostats">FERROSTATS</a> &mdash; Data Lakehouse Medall&oacute;n Cloud-Native y Pipeline Streaming en GCP</strong></td>
-        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app">App en Vivo</a></td>
+        <td class="right"><a href="https://github.com/bapatata688/Ferrostats">GitHub</a> &nbsp;|&nbsp; <a href="https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d">Looker Studio BI</a> &nbsp;|&nbsp; <a href="https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app/">App en Vivo</a></td>
       </tr>
     </table>
     <ul>
@@ -571,12 +559,8 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>University of the People</strong> &mdash; Pasadena, California, USA</td>
-        <td class="right">Admitted | Term 3, 2027</td>
-      </tr>
-      <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong></td>
-        <td class="right">WSCUC-accredited institution | 100% Online</td>
+        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
+        <td class="right">Admitido | Term 3, 2027</td>
       </tr>
       <tr>
         <td class="left"><strong>Bachillerato T&eacute;cnico Vocacional en Desarrollo de Software</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>Promedio: 9.5/10.0</em></td>
