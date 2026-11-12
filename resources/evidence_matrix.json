@@ -197,6 +197,9 @@
         "name": "FERROSTATS",
         "type": "Personal Engineering Portfolio Project",
         "description": "Cloud-Native Medallion Lakehouse on GCP with POS streaming",
+        "github_url": "https://github.com/bapatata688/Ferrostats",
+        "live_app_url": "https://ferrostats-bi-platform-s72yk4nsvq-uc.a.run.app/",
+        "looker_studio_url": "https://datastudio.google.com/reporting/2389e684-fc9b-431d-9c56-487b3067eb87/page/p_dwbfqrtk8d",
         "repositories": [
           "https://github.com/bapatata688/Ferrostats",
           "https://github.com/b0ldm6diego"
