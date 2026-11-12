@@ -53,11 +53,13 @@ if str(TESTS_DIR) not in sys.path:
 from tests.test_harness_utils import (
     KNOWN_ASSET_HASHES,
     MANDATORY_DECISION_LOG_FIELDS,
+    PYPDF_AVAILABLE,
     assert_path_exists,
     assert_pdf_geometry,
     assert_sha256_matches,
     compute_sha256,
     parse_decision_log,
+    pypdf,
     run_command_safe,
     scan_forbidden_claims,
     validate_decision_log_entries,
@@ -361,7 +363,7 @@ class TestF6CssBudgetTuning(unittest.TestCase):
             )
 
     def test_f6_ats_bullet_dot_isolation_css(self):
-        """F6: Confirms CSS eliminates orphaned bullet dots during copy/paste via li::before."""
+        """F6: Confirms CSS eliminates orphaned bullet dots during copy/paste via static inline-block li::before."""
         templates = self._get_html_templates()
         if not templates:
             self.skipTest("[Progressive Testability] HTML templates in cv/ not yet present.")
@@ -372,6 +374,28 @@ class TestF6CssBudgetTuning(unittest.TestCase):
                 "list-style: none" in content or "list-style:none" in content,
                 f"Template {tmpl.name} does not suppress default list-style for ATS compatibility."
             )
+            self.assertIn(
+                "text-indent: -12px",
+                content,
+                f"Template {tmpl.name} missing static hanging indent (text-indent: -12px) for ATS DOM reading order."
+            )
+            self.assertNotIn(
+                "position: absolute",
+                content,
+                f"Template {tmpl.name} uses position: absolute, which causes WeasyPrint to paint bullets out of DOM order."
+            )
+            pdf_path = tmpl.with_suffix(".pdf")
+            if pdf_path.is_file() and PYPDF_AVAILABLE:
+                reader = pypdf.PdfReader(str(pdf_path))
+                text = reader.pages[0].extract_text() or ""
+                edu_idx = text.find("Education") if "Education" in text else text.find("Educación")
+                last_bullet_idx = text.rfind("•")
+                self.assertGreater(last_bullet_idx, 0, f"No bullet characters extracted in {pdf_path.name}")
+                self.assertLess(
+                    last_bullet_idx,
+                    edu_idx,
+                    f"ATS reading-order regression in {pdf_path.name}: bullets were extracted after Education section."
+                )
 
 
 # ============================================================================

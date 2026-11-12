@@ -107,6 +107,12 @@ def verify_single_pdf(pdf_path: Path) -> Dict[str, Any]:
                 result["errors"].append("Missing identity anchor: 'Diego Alejandro Escobar Barahona' not found in text")
             if "University of the People" not in text:
                 result["errors"].append("Missing education anchor: 'University of the People' not found in text")
+            edu_idx = text.find("Education") if "Education" in text else text.find("Educación")
+            last_bullet_idx = text.rfind("•")
+            if edu_idx != -1 and last_bullet_idx > edu_idx:
+                result["errors"].append(
+                    "ATS reading-order violation: bullet dots ('•') appear after Education section in PDF text stream"
+                )
         except Exception as exc:
             result["errors"].append(f"Text extraction error: {exc}")
 

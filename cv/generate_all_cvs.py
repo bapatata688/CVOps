@@ -101,7 +101,7 @@ h1 {{
   font-weight: 400;
   text-align: center;
   line-height: {self.body_line_height};
-  margin: 0 0 2px 0;
+  margin: 0 0 4px 0;
   color: var(--primary);
   letter-spacing: 0.2px;
 }}
@@ -111,7 +111,7 @@ h1 {{
   font-size: 9.8pt;
   font-weight: 700;
   line-height: {self.body_line_height};
-  margin: 0 0 2.5px 0;
+  margin: 0 0 1.5px 0;
   color: var(--primary);
 }}
 
@@ -177,7 +177,7 @@ table.entry-header td.right {{
   padding-left: 10px;
 }}
 
-/* ATS Fix for WeasyPrint 70.0: Eliminates orphaned bullet dots during copy/paste */
+/* ATS Fix for WeasyPrint 70.0: Static normal-flow hanging indent preserves strict DOM/ATS reading order */
 ul {{
   list-style: none !important;
   padding-left: 0 !important;
@@ -185,18 +185,18 @@ ul {{
 }}
 
 li {{
-  position: relative;
   padding-left: {self.li_padding_left};
+  text-indent: -{self.li_padding_left};
   margin-bottom: {self.li_margin_bottom};
   text-align: left;
   line-height: {self.body_line_height};
 }}
 
 li::before {{
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
+  content: "• ";
+  display: inline-block;
+  width: {self.li_padding_left};
+  text-indent: 0;
   color: var(--text);
 }}
 
@@ -788,7 +788,7 @@ def compile_all(
 
         if not pdf_only:
             html_content = target.full_html()
-            html_path.write_text(html_content, encoding="utf-8")
+            html_path.write_text(html_content, encoding="utf-8", newline="\n")
             if verbose:
                 print(f"[HTML] Written: {html_path.relative_to(base_dir)}")
 

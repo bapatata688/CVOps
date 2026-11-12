@@ -63,7 +63,7 @@ h1 {
   font-weight: 400;
   text-align: center;
   line-height: 1.14;
-  margin: 0 0 2px 0;
+  margin: 0 0 4px 0;
   color: var(--primary);
   letter-spacing: 0.2px;
 }
@@ -73,7 +73,7 @@ h1 {
   font-size: 9.8pt;
   font-weight: 700;
   line-height: 1.14;
-  margin: 0 0 2.5px 0;
+  margin: 0 0 1.5px 0;
   color: var(--primary);
 }
 
@@ -139,7 +139,7 @@ table.entry-header td.right {
   padding-left: 10px;
 }
 
-/* ATS Fix for WeasyPrint 70.0: Eliminates orphaned bullet dots during copy/paste */
+/* ATS Fix for WeasyPrint 70.0: Static normal-flow hanging indent preserves strict DOM/ATS reading order */
 ul {
   list-style: none !important;
   padding-left: 0 !important;
@@ -147,18 +147,18 @@ ul {
 }
 
 li {
-  position: relative;
   padding-left: 12px;
+  text-indent: -12px;
   margin-bottom: 2px;
   text-align: left;
   line-height: 1.14;
 }
 
 li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
+  content: "• ";
+  display: inline-block;
+  width: 12px;
+  text-indent: 0;
   color: var(--text);
 }
 
