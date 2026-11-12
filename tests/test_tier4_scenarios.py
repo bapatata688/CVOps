@@ -216,8 +216,8 @@ class TestS2RecruitmentScreenerSimulation(unittest.TestCase):
         # 2. Duration July - Oct 2026 (13 weeks)
         self.assertIn("July 2026", de_en_text)
         self.assertIn("Oct 2026", de_en_text)
-        # 3. 15 DataStage ETL jobs
-        self.assertTrue("15" in de_en_text and "DataStage" in de_en_text)
+        # 3. DataStage ETL jobs under technical mentorship
+        self.assertIn("DataStage", de_en_text)
         # 4. DB2 LUW on Linux RHEL
         self.assertTrue("DB2" in de_en_text and "RHEL" in de_en_text)
         # 5. GCP ELT Architecture (BigQuery, Dataform, Datastream CDC)
@@ -276,13 +276,23 @@ class TestS2RecruitmentScreenerSimulation(unittest.TestCase):
                 self.assertNotIn("solved all 34", text.lower())
 
     def test_s2_08_screener_ferrostats_portfolio_lakehouse_and_finops(self):
-        """S2 Screener FERROSTATS: Audits Medallion Lakehouse on GCP, <50 ms latency, and $0.00/mo FinOps."""
+        """S2 Screener FERROSTATS: Audits Medallion Lakehouse on GCP, BigQuery Bronze streaming, and <$1/mo Free Tier FinOps."""
         de_en_text = self.extracted_pdf_texts.get("Diego_Alejandro_Escobar_Barahona_CV_EN.pdf", "")
         self.assertIn("FERROSTATS", de_en_text)
         self.assertIn("Medallion", de_en_text)
-        self.assertIn("<50 ms", de_en_text)
-        self.assertIn("$0.00/mo", de_en_text)
+        self.assertIn("BigQuery Bronze", de_en_text)
+        self.assertIn("<$1/mo", de_en_text)
         self.assertIn("Looker Studio", de_en_text)
+
+        # Asserts indefensible claims were pruned across all PDFs
+        for pdf_name, text in self.extracted_pdf_texts.items():
+            with self.subTest(pdf=pdf_name):
+                self.assertNotIn("<50 ms", text)
+                self.assertNotIn("$0.00/mo", text)
+                self.assertNotIn("$0.00/mes", text)
+                self.assertNotIn("Artifact Registry", text)
+                self.assertNotIn("SQLite", text)
+                self.assertNotIn("Kiro", text)
 
         # Asserts no commercial startup fabrication
         self.assertNotIn("revenue-generating", de_en_text.lower())

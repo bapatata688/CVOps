@@ -225,13 +225,13 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
 
     <h2>Professional Summary</h2>
     <hr class="section-rule">
-    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> with enterprise internship experience at <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> and experience designing cloud architecture and data contracts for a <strong>Medallion Data Lakehouse on Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, fluent in <strong>English (C1 Advanced, EF SET 66/100)</strong>, with hands-on experience in <strong>BigQuery, Dataform (SQLX), SQL, Python, and Spec-Driven Development (SDD)</strong>, and working knowledge of <strong>Datastream CDC, IBM InfoSphere DataStage, and IBM DB2 LUW</strong>.</p>
+    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> with enterprise internship experience at <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> and experience designing cloud architecture for a <strong>Medallion Data Lakehouse on Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, fluent in <strong>English (C1 Advanced, EF SET 66/100)</strong>, with hands-on experience in <strong>BigQuery, Dataform (SQLX), SQL, Python, and Spec-Driven Development (SDD)</strong>, and working knowledge of <strong>Datastream CDC, IBM InfoSphere DataStage, and IBM DB2 LUW</strong>.</p>
 
     <h2>Experience</h2>
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM (IBM &amp; Google Cloud Premier Partner)</strong> &ndash; San Salvador</td>
+        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM</strong> &ndash; San Salvador</td>
         <td class="right">July 2026 &ndash; Oct 2026</td>
       </tr>
     </table>
@@ -239,7 +239,6 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
       <li>Designed a <strong>client ETL architecture proposal</strong> for near-real-time cloud replication on <strong>Google Cloud</strong> (<strong>BigQuery, Dataform, Datastream CDC, Cloud Storage</strong>), backed by <strong>Lucidchart</strong> dimensional models and <strong>SQL DDL</strong> scripts.</li>
       <li>Developed and executed <strong>ETL integration jobs under technical mentorship</strong> in <strong>IBM InfoSphere DataStage</strong> (Transformers, Lookups, Joins, Merge) across enterprise test datasets and queried <strong>IBM DB2 LUW</strong> on <strong>Linux RHEL</strong>.</li>
       <li>Supported <strong>auditable cloud governance and FinOps budget estimation</strong> across client proposals by co-authoring <strong>GCP security guidelines</strong> (least-privilege <strong>IAM, MFA</strong>, credential rotation, audit logging, data lineage) and sizing cloud infrastructure in <strong>Google Cloud Pricing Calculator</strong>.</li>
-      <li>Significantly reduced corporate PDF documentation compilation time and completed assigned engineering tasks in <strong>Azure DevOps</strong> by specifying and validating a <strong>Python CLI automation tool</strong> under <strong>Spec-Driven Development (SDD)</strong> with <strong>Kiro</strong> and supporting team <strong>Git/SSH</strong> workflows.</li>
       <li><strong>Co-author | OntoTab (GBM):</strong> Executed empirical benchmark experiments under <strong>5&times;3 nested cross-validation</strong> across <strong>30,000 public credit-risk records</strong> (UCI Taiwan), evaluating ontology-enriched text descriptions encoded via <strong>frozen BGE-M3 (1,024 dims)</strong> across Logistic Regression, XGBoost, and MLP; with XGBoost, text-only ontology representations (R5) reached <strong>0.5069 AP</strong> versus <strong>0.5596 AP</strong> for the engineered numeric baseline (R8) and <strong>0.5568 AP</strong> for the hybrid model (R9), motivating a separate structured numeric channel.</li>
     </ul>
 
@@ -253,17 +252,17 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
     </table>
     <ul>
       <li>Architected a cloud-native <strong>Medallion Data Lakehouse (Bronze / Silver / Gold)</strong> in <strong>Google BigQuery</strong> orchestrated via <strong>Google Dataform</strong>, structuring <strong>4 core Bronze tables</strong> (<code>raw_sales</code>, <code>raw_sale_items</code>, <code>raw_products</code>, <code>raw_inventory_movements</code>), <strong>3 Silver staging views</strong> (<code>stg_sales</code>, <code>stg_sale_items</code>, <code>stg_products</code>) with automated data quality assertions, and <strong>3 Gold Star Schema analytical marts</strong> (<code>fct_daily_sales</code>, <code>mart_inventory_pareto_abc</code>, <code>dim_products</code>).</li>
-      <li>Defined functional data contracts under <strong>Spec-Driven Development (SDD)</strong> for 80/20 Pareto ABC inventory segmentation, Daily Burn Rate, Days of Inventory (DOI), and Reorder Point (ROP), directing and validating AI-assisted SQLX implementations to power a <strong>3-page Google Looker Studio executive dashboard</strong>.</li>
-      <li>Specified a decoupled ingestion architecture achieving <strong>&lt;50 ms local ACID checkout in SQLite</strong> with <strong>asynchronous REST streaming into BigQuery Bronze</strong>, establishing transactional concurrency rules and UUID idempotency contracts under <strong>Spec-Driven Development (SDD)</strong>.</li>
-      <li>Configured a permanent <strong>$0.00/mo GCP FinOps architecture</strong> (<strong>~$40/mo saved</strong> across <strong>~15,000 req/mo</strong>) via scale-to-zero <strong>Cloud Run</strong> containers (<strong>&lt;3 s</strong> cold starts), keyless IAM Service Account authentication, and automated <strong>Artifact Registry</strong> image pruning (<strong>&lt;0.3 GB</strong>).</li>
+      <li>Defined functional specifications under <strong>Spec-Driven Development (SDD)</strong> for 80/20 Pareto ABC inventory segmentation, Daily Burn Rate, Days of Inventory (DOI), and Reorder Point (ROP), directing and validating AI-assisted SQLX implementations to power a <strong>3-page Google Looker Studio executive dashboard</strong>.</li>
+      <li>Specified a decoupled ingestion architecture with <strong>asynchronous REST API streaming into BigQuery Bronze</strong>, establishing transactional concurrency rules and UUID idempotency under <strong>Spec-Driven Development (SDD)</strong>.</li>
+      <li>Configured a <strong>FinOps architecture (&lt;$1/mo) on GCP</strong> leveraging the Free Tier for portfolio project deployment across <strong>Cloud Run and BigQuery</strong>.</li>
     </ul>
 
     <h2>Skills</h2>
     <hr class="section-rule">
-    <p class="skill-row"><strong>Cloud &amp; Data Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Cloud Storage, Cloud Run, Artifact Registry, Looker Studio, IAM, FinOps &amp; Pricing Calculator), working knowledge of Datastream CDC</p>
-    <p class="skill-row"><strong>Data Modeling &amp; Pipelines:</strong> Medallion Architecture (Bronze/Silver/Gold), Star Schema (Fact/Dimension Tables), Data Contracts &amp; Quality Assertions, Lucidchart, familiar with IBM InfoSphere DataStage</p>
+    <p class="skill-row"><strong>Cloud &amp; Data Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Cloud Storage, Cloud Run, Looker Studio, IAM, FinOps &amp; Pricing Calculator), working knowledge of Datastream CDC</p>
+    <p class="skill-row"><strong>Data Modeling &amp; Pipelines:</strong> Medallion Architecture (Bronze/Silver/Gold), Star Schema (Fact/Dimension Tables), Data Quality Assertions, Lucidchart, familiar with IBM InfoSphere DataStage</p>
     <p class="skill-row"><strong>Languages &amp; Methodologies:</strong> SQL (GoogleSQL, CTEs, DDL/DML), Python 3.11 (Pandas, NumPy), Spec-Driven Development (SDD), AI-Assisted Workflows, Bash, PowerShell</p>
-    <p class="skill-row"><strong>Databases &amp; Infrastructure:</strong> SQLite, familiar with IBM DB2 LUW and Linux RHEL, Docker, Git/SSH, Azure DevOps</p>
+    <p class="skill-row"><strong>Databases &amp; Infrastructure:</strong> Familiar with IBM DB2 LUW and Linux RHEL, Docker, Git/SSH, Azure DevOps</p>
     <p class="skill-row"><strong>Spoken Languages:</strong> Spanish (Native), English (C1 Advanced &mdash; EF SET 66/100)</p>
 
     <h2>Certifications</h2>
@@ -300,12 +299,9 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
       </tr>
       <tr>
         <td class="left"><strong>Technical Baccalaureate in Software Development</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>GPA: 9.5/10.0</em></td>
-        <td class="right">Expected December 2026</td>
+        <td class="right">2026</td>
       </tr>
     </table>
-    <ul>
-      <li><strong>Key Curriculum:</strong> Algorithmic Logic, Relational Databases (SQL), Data Structures, Web Architecture &amp; Software Engineering.</li>
-    </ul>
   </main>"""
 
 HTML_BODY_DE_ES = """  <main class="document-flow">
@@ -316,13 +312,13 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
 
     <h2>Perfil Profesional</h2>
     <hr class="section-rule">
-    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> con experiencia de pasant&iacute;a empresarial en <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> y experiencia dise&ntilde;ando arquitectura Cloud y contratos de datos para un <strong>Data Lakehouse Medallion en Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, con <strong>ingl&eacute;s C1 Avanzado (EF SET 66/100)</strong>, experiencia pr&aacute;ctica en <strong>BigQuery, Dataform (SQLX), SQL, Python y Spec-Driven Development (SDD)</strong>, y conocimiento funcional de <strong>Datastream CDC, IBM InfoSphere DataStage e IBM DB2 LUW</strong>.</p>
+    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> con experiencia de pasant&iacute;a empresarial en <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> y experiencia dise&ntilde;ando arquitectura Cloud para un <strong>Data Lakehouse Medallion en Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, con <strong>ingl&eacute;s C1 Avanzado (EF SET 66/100)</strong>, experiencia pr&aacute;ctica en <strong>BigQuery, Dataform (SQLX), SQL, Python y Spec-Driven Development (SDD)</strong>, y conocimiento funcional de <strong>Datastream CDC, IBM InfoSphere DataStage e IBM DB2 LUW</strong>.</p>
 
     <h2>Experiencia</h2>
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM (IBM &amp; GCP Premier Partner)</strong> &ndash; San Salvador</td>
+        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM</strong> &ndash; San Salvador</td>
         <td class="right">Julio 2026 &ndash; Oct 2026</td>
       </tr>
     </table>
@@ -330,7 +326,6 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
       <li>Dise&ntilde;&eacute; una <strong>propuesta de arquitectura ETL para cliente</strong> orientada a replicaci&oacute;n casi en tiempo real en <strong>Google Cloud</strong> (<strong>BigQuery, Dataform, Datastream CDC, Cloud Storage</strong>), respaldada por modelos dimensionales en <strong>Lucidchart</strong> y scripts <strong>SQL DDL</strong>.</li>
       <li>Desarroll&eacute; y ejecut&eacute; <strong>jobs de integraci&oacute;n ETL bajo mentor&iacute;a t&eacute;cnica</strong> en <strong>IBM InfoSphere DataStage</strong> (Transformers, Lookups, Joins, Merge) sobre datasets de prueba empresariales y realic&eacute; consultas en <strong>IBM DB2 LUW</strong> sobre <strong>Linux RHEL</strong>.</li>
       <li>Apoy&eacute; la estructuraci&oacute;n de <strong>gobierno de datos auditable y estimaci&oacute;n presupuestaria FinOps</strong> en propuestas cloud al co-redactar <strong>lineamientos de seguridad en GCP</strong> (<strong>IAM</strong> de privilegio m&iacute;nimo, <strong>MFA</strong>, rotaci&oacute;n de credenciales, linaje de datos) y dimensionar infraestructura en <strong>Google Cloud Pricing Calculator</strong>.</li>
-      <li>Reduje significativamente el tiempo de compilaci&oacute;n de documentaci&oacute;n corporativa a PDF y complet&eacute; tareas t&eacute;cnicas asignadas en <strong>Azure DevOps</strong> al especificar y validar una <strong>herramienta CLI en Python</strong> bajo <strong>Spec-Driven Development (SDD)</strong> con <strong>Kiro</strong> y apoyar al equipo con flujos de <strong>Git/SSH</strong>.</li>
       <li><strong>Coautor | OntoTab (GBM):</strong> Ejecut&eacute; experimentos emp&iacute;ricos bajo validaci&oacute;n cruzada anidada (<strong>5&times;3 nested CV</strong>) sobre <strong>30,000 registros p&uacute;blicos de cr&eacute;dito</strong> (UCI Taiwan), evaluando descripciones enriquecidas con ontolog&iacute;as codificadas mediante <strong>BGE-M3 congelado (1,024 dims)</strong> en Regresi&oacute;n Log&iacute;stica, XGBoost y MLP; en XGBoost, el brazo de texto con ontolog&iacute;a (R5) alcanz&oacute; <strong>0.5069 AP</strong> frente a <strong>0.5596 AP</strong> del baseline num&eacute;rico estructurado (R8) y <strong>0.5568 AP</strong> en el modelo h&iacute;brido (R9), demostrando la importancia de preservar canales num&eacute;ricos tipados.</li>
     </ul>
 
@@ -344,17 +339,17 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
     </table>
     <ul>
       <li>Dise&ntilde;&eacute; la arquitectura Cloud de un <strong>Data Lakehouse Medall&oacute;n (Bronze / Silver / Gold)</strong> en <strong>Google BigQuery</strong> orquestado con <strong>Google Dataform</strong>, estructurando <strong>4 tablas principales en Bronze</strong> (<code>raw_sales</code>, <code>raw_sale_items</code>, <code>raw_products</code>, <code>raw_inventory_movements</code>), <strong>3 vistas en Silver</strong> (<code>stg_sales</code>, <code>stg_sale_items</code>, <code>stg_products</code>) con aserciones de calidad y <strong>3 Data Marts Gold en Esquema Estrella</strong> (<code>fct_daily_sales</code>, <code>mart_inventory_pareto_abc</code>, <code>dim_products</code>).</li>
-      <li>Defin&iacute; las especificaciones funcionales y contratos de datos bajo <strong>Spec-Driven Development (SDD)</strong> para segmentaci&oacute;n Pareto ABC (80/20), Burn Rate, D&iacute;as de Inventario (DOI) y Punto de Reorden (ROP), dirigiendo y validando la implementaci&oacute;n asistida por IA en SQLX para alimentar un <strong>reporte ejecutivo de 3 p&aacute;ginas en Google Looker Studio</strong>.</li>
-      <li>Especific&eacute; una arquitectura de ingesta desacoplada con <strong>checkout local ACID &lt;50 ms en SQLite</strong> y <strong>streaming as&iacute;ncrono v&iacute;a REST API hacia BigQuery Bronze</strong>, estableciendo reglas de concurrencia transaccional e idempotencia por UUID bajo <strong>Spec-Driven Development (SDD)</strong>.</li>
-      <li>Configur&eacute; una <strong>arquitectura FinOps de $0.00/mes permanente en GCP</strong> (<strong>~$40/mes ahorrados</strong> en <strong>~15,000 req/mes</strong>) mediante contenedores scale-to-zero en <strong>Cloud Run</strong> (<strong>&lt;3 s</strong> de arranque en fr&iacute;o), autenticaci&oacute;n segura IAM sin llaves locales y poda autom&aacute;tica en <strong>Artifact Registry</strong> (<strong>&lt;0.3 GB</strong>).</li>
+      <li>Defin&iacute; las especificaciones funcionales bajo <strong>Spec-Driven Development (SDD)</strong> para segmentaci&oacute;n Pareto ABC (80/20), Burn Rate, D&iacute;as de Inventario (DOI) y Punto de Reorden (ROP), dirigiendo y validando la implementaci&oacute;n asistida por IA en SQLX para alimentar un <strong>reporte ejecutivo de 3 p&aacute;ginas en Google Looker Studio</strong>.</li>
+      <li>Especific&eacute; una arquitectura de ingesta desacoplada con <strong>streaming as&iacute;ncrono v&iacute;a REST API hacia BigQuery Bronze</strong>, estableciendo reglas de concurrencia transaccional e idempotencia por UUID bajo <strong>Spec-Driven Development (SDD)</strong>.</li>
+      <li>Configur&eacute; una <strong>arquitectura FinOps (&lt;$1/mes) en GCP</strong> aprovechando la capa gratuita (Free Tier) para el despliegue del proyecto de portafolio en <strong>Cloud Run y BigQuery</strong>.</li>
     </ul>
 
     <h2>Habilidades</h2>
     <hr class="section-rule">
-    <p class="skill-row"><strong>Cloud y Data Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Cloud Storage, Cloud Run, Artifact Registry, Looker Studio, IAM, FinOps y Pricing Calculator), conocimiento funcional de Datastream CDC</p>
-    <p class="skill-row"><strong>Modelado de Datos y Pipelines:</strong> Arquitectura Medallion (Bronze/Silver/Gold), Esquema Estrella (Hechos y Dimensiones), Contratos de Datos y Aserciones de Calidad, Lucidchart, familiaridad con IBM InfoSphere DataStage</p>
+    <p class="skill-row"><strong>Cloud y Data Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Cloud Storage, Cloud Run, Looker Studio, IAM, FinOps y Pricing Calculator), conocimiento funcional de Datastream CDC</p>
+    <p class="skill-row"><strong>Modelado de Datos y Pipelines:</strong> Arquitectura Medallion (Bronze/Silver/Gold), Esquema Estrella (Hechos y Dimensiones), Aserciones de Calidad de Datos, Lucidchart, familiaridad con IBM InfoSphere DataStage</p>
     <p class="skill-row"><strong>Lenguajes y Metodolog&iacute;as:</strong> SQL (GoogleSQL, CTEs, DDL/DML), Python 3.11 (Pandas, NumPy), Spec-Driven Development (SDD), Desarrollo Asistido por IA, Bash, PowerShell</p>
-    <p class="skill-row"><strong>Bases de Datos e Infraestructura:</strong> SQLite, familiaridad con IBM DB2 LUW y Linux RHEL, Docker, Git/SSH, Azure DevOps</p>
+    <p class="skill-row"><strong>Bases de Datos e Infraestructura:</strong> Familiaridad con IBM DB2 LUW y Linux RHEL, Docker, Git/SSH, Azure DevOps</p>
     <p class="skill-row"><strong>Idiomas:</strong> Espa&ntilde;ol (Nativo), Ingl&eacute;s (C1 Avanzado &mdash; EF SET 66/100)</p>
 
     <h2>Certificaciones</h2>
@@ -391,23 +386,20 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
       </tr>
       <tr>
         <td class="left"><strong>Bachillerato T&eacute;cnico Vocacional en Desarrollo de Software</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>Promedio: 9.5/10.0</em></td>
-        <td class="right">Esperado: Dic 2026</td>
+        <td class="right">2026</td>
       </tr>
     </table>
-    <ul>
-      <li><strong>Curr&iacute;culo T&eacute;cnico Clave:</strong> L&oacute;gica Algor&iacute;tmica, Bases de Datos Relacionales (SQL), Estructuras de Datos, Arquitectura Web e Ingenier&iacute;a de Software.</li>
-    </ul>
   </main>"""
 
 HTML_BODY_PUB_EN = """  <main class="document-flow">
     <h1>Diego Alejandro Escobar Barahona</h1>
-    <p class="role-headline">Junior Data Engineer &nbsp;|&nbsp; Machine Learning Researcher &nbsp;|&nbsp; Cloud Specialist</p>
+    <p class="role-headline">Junior Data Engineer &nbsp;|&nbsp; Cloud Data Engineer &nbsp;|&nbsp; Analytics Engineer</p>
     <p class="contact-line">San Salvador, El Salvador &nbsp;|&nbsp; <a href="mailto:diegoalejandroescobarahona1@gmail.com">diegoalejandroescobarahona1@gmail.com</a> &nbsp;|&nbsp; +503 7549 0118</p>
     <p class="contact-subline"><a href="https://www.linkedin.com/in/diego-escobar-459256394">linkedin.com/in/diego-escobar-459256394</a> &nbsp;|&nbsp; <a href="https://github.com/bapatata688">github.com/bapatata688</a> &nbsp;|&nbsp; <a href="https://www.credly.com/badges/e27fea72-5eaf-47ee-a43c-43faa3a8fb10/public_url">credly.com/badges/e27fea72-5eaf-47ee-a43c-43faa3a8fb10</a></p>
 
     <h2>Professional Summary</h2>
     <hr class="section-rule">
-    <p class="summary-text"><strong>Junior Data Engineer &amp; ML Researcher</strong> with enterprise internship experience at <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> and co-author in empirical credit risk research (OntoTab, 30,000 records). <strong>Google Cloud Certified Associate Data Practitioner</strong> with solid foundation in cloud ELT architectures on <strong>Google Cloud (BigQuery, Dataform SQLX, Datastream CDC)</strong>, integration tasks in <strong>IBM InfoSphere DataStage, IBM DB2 LUW on Linux RHEL</strong>, tabular ML modeling in <strong>Python (XGBoost, Pandas, PyArrow)</strong>, and <strong>SQL</strong>. Fluent in English (<strong>EF SET C1 Advanced, 66/100, Listening C2 Proficient</strong>).</p>
+    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> with enterprise internship experience at <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> and co-author in empirical credit risk research (OntoTab, 30,000 records). <strong>Google Cloud Certified Associate Data Practitioner</strong> with solid foundation in cloud ELT architectures on <strong>Google Cloud (BigQuery, Dataform SQLX, Datastream CDC)</strong>, integration tasks in <strong>IBM InfoSphere DataStage, IBM DB2 LUW on Linux RHEL</strong>, tabular statistical modeling in <strong>Python (XGBoost, Pandas, PyArrow)</strong>, and <strong>SQL</strong>. Fluent in English (<strong>EF SET C1 Advanced, 66/100, Listening C2 Proficient</strong>).</p>
 
     <h2>Scientific Research &amp; Publications</h2>
     <hr class="section-rule">
@@ -426,7 +418,7 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM (IBM &amp; Google Cloud Premier Partner)</strong> &ndash; San Salvador</td>
+        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM</strong> &ndash; San Salvador</td>
         <td class="right">July 2026 &ndash; Oct 2026</td>
       </tr>
     </table>
@@ -434,7 +426,6 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
       <li>Designed an <strong>ELT cloud replication architecture proposal</strong> on <strong>Google Cloud</strong> (<strong>BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage</strong>) delivering <strong>Lucidchart</strong> data flow diagrams and <strong>SQL DDL</strong> scripts.</li>
       <li>Developed and executed <strong>hands-on ETL integration tasks under technical mentorship</strong> in <strong>IBM InfoSphere DataStage</strong> (Transformers, Lookups, Joins, Merge, Funnel) across enterprise test datasets, querying <strong>IBM DB2 LUW</strong> on <strong>Linux RHEL</strong>.</li>
       <li>Assisted in formulating GCP cloud governance frameworks and FinOps budget validations (least-privilege <strong>IAM, Service Accounts</strong>, credential rotation) and infrastructure sizing in <strong>Google Cloud Pricing Calculator</strong>.</li>
-      <li>Built a Python CLI automation tool under <strong>Spec-Driven Development (SDD)</strong> to compile corporate technical documentation to PDF, assisting team members with <strong>Git/SSH</strong> workflows.</li>
     </ul>
 
     <h2>Projects</h2>
@@ -446,14 +437,14 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
       </tr>
     </table>
     <ul>
-      <li>Architected a cloud-native <strong>Medallion Lakehouse (Bronze / Silver / Gold)</strong> in <strong>Google BigQuery</strong> with <strong>Dataform SQLX</strong>, structuring 7 raw landing tables into curated Silver views and <strong>3 Gold Star Schema analytical marts</strong> (<code>fct_daily_sales</code>, <code>mart_inventory_pareto_abc</code>, <code>dim_products</code>).</li>
+      <li>Architected a cloud-native <strong>Medallion Lakehouse (Bronze / Silver / Gold)</strong> in <strong>Google BigQuery</strong> with <strong>Dataform SQLX</strong>, structuring 4 core Bronze tables into curated Silver views and <strong>3 Gold Star Schema analytical marts</strong> (<code>fct_daily_sales</code>, <code>mart_inventory_pareto_abc</code>, <code>dim_products</code>).</li>
       <li>Formulated functional specifications under <strong>Spec-Driven Development (SDD)</strong> for 80/20 Pareto ABC inventory segmentation, Daily Burn Rate, and DOI, powering a 3-page executive dashboard in <strong>Looker Studio</strong> with analytical SQL window functions.</li>
-      <li>Engineered a decoupled OLTP-to-OLAP streaming ingestion pipeline achieving <strong>&lt;50 ms</strong> latency into BigQuery Bronze via REST API with ACID concurrency constraints, achieving a permanent <strong>$0.00/mo FinOps architecture on GCP</strong> via <strong>Cloud Run</strong>.</li>
+      <li>Specified a decoupled ingestion architecture with <strong>asynchronous REST API streaming into BigQuery Bronze</strong>, establishing transactional concurrency rules and UUID idempotency under <strong>Spec-Driven Development (SDD)</strong>, and configured a <strong>FinOps architecture (&lt;$1/mo) on GCP</strong> leveraging the Free Tier across <strong>Cloud Run and BigQuery</strong>.</li>
     </ul>
 
     <h2>Skills</h2>
     <hr class="section-rule">
-    <p class="skill-row"><strong>Cloud &amp; Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage, Cloud Run, Artifact Registry, Looker Studio, IAM Service Accounts, Cloud Logging/Monitoring, FinOps)</p>
+    <p class="skill-row"><strong>Cloud &amp; Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage, Cloud Run, Looker Studio, IAM Service Accounts, Cloud Logging/Monitoring, FinOps)</p>
     <p class="skill-row"><strong>Machine Learning &amp; Modeling:</strong> 5x3 Nested Cross-Validation, Bootstrap Resampling, XGBoost, Logistic Regression, BGE-M3 Embeddings, Average Precision (AP), Medallion Architecture, Star Schema</p>
     <p class="skill-row"><strong>Languages &amp; Querying:</strong> SQL (GoogleSQL, PostgreSQL 18, Window Functions, CTEs, Anti-joins, DDL/DML), Python 3.11 (Pandas, PyArrow, NumPy), Bash, PowerShell, Docker, Linux RHEL, Git/SSH</p>
     <p class="skill-row"><strong>Languages:</strong> Spanish (Native), English (C1 Advanced &mdash; EF SET 66/100, Listening C2 Proficient)</p>
@@ -492,23 +483,20 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
       </tr>
       <tr>
         <td class="left"><strong>Technical Baccalaureate in Software Development</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>GPA: 9.5/10.0</em></td>
-        <td class="right">Expected December 2026</td>
+        <td class="right">2026</td>
       </tr>
     </table>
-    <ul>
-      <li><strong>Key Curriculum:</strong> Algorithmic Logic, Relational Databases (SQL), Data Structures, Web Architecture &amp; Software Engineering.</li>
-    </ul>
   </main>"""
 
 HTML_BODY_PUB_ES = """  <main class="document-flow">
     <h1>Diego Alejandro Escobar Barahona</h1>
-    <p class="role-headline">Junior Data Engineer &nbsp;|&nbsp; Machine Learning Researcher &nbsp;|&nbsp; Cloud Specialist</p>
+    <p class="role-headline">Junior Data Engineer &nbsp;|&nbsp; Cloud Data Engineer &nbsp;|&nbsp; Analytics Engineer</p>
     <p class="contact-line">San Salvador, El Salvador &nbsp;|&nbsp; <a href="mailto:diegoalejandroescobarahona1@gmail.com">diegoalejandroescobarahona1@gmail.com</a> &nbsp;|&nbsp; +503 7549 0118</p>
     <p class="contact-subline"><a href="https://www.linkedin.com/in/diego-escobar-459256394">linkedin.com/in/diego-escobar-459256394</a> &nbsp;|&nbsp; <a href="https://github.com/bapatata688">github.com/bapatata688</a> &nbsp;|&nbsp; <a href="https://www.credly.com/badges/e27fea72-5eaf-47ee-a43c-43faa3a8fb10/public_url">credly.com/badges/e27fea72-5eaf-47ee-a43c-43faa3a8fb10</a></p>
 
     <h2>Perfil Profesional</h2>
     <hr class="section-rule">
-    <p class="summary-text"><strong>Junior Data Engineer &amp; Investigador de ML</strong> con experiencia empresarial en <strong>GBM (Premier Partner de IBM y Google Cloud)</strong> y coautor en investigaci&oacute;n cient&iacute;fica en riesgo crediticio (OntoTab, 30,000 registros). <strong>Google Cloud Certified Associate Data Practitioner</strong>, con s&oacute;lidas bases en arquitecturas ELT en <strong>Google Cloud (BigQuery, Dataform SQLX, Datastream CDC)</strong>, tareas de integraci&oacute;n en <strong>IBM InfoSphere DataStage, IBM DB2 LUW sobre Linux RHEL</strong>, modelado estad&iacute;stico tabular en <strong>Python (XGBoost, Pandas, PyArrow)</strong> y <strong>SQL</strong>. Biling&uuml;e con <strong>Ingl&eacute;s C1 Avanzado (EF SET 66/100, Listening C2 Proficient)</strong>.</p>
+    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> con experiencia empresarial en <strong>GBM (Premier Partner de IBM y Google Cloud)</strong> y coautor en investigaci&oacute;n cient&iacute;fica en riesgo crediticio (OntoTab, 30,000 registros). <strong>Google Cloud Certified Associate Data Practitioner</strong>, con s&oacute;lidas bases en arquitecturas ELT en <strong>Google Cloud (BigQuery, Dataform SQLX, Datastream CDC)</strong>, tareas de integraci&oacute;n en <strong>IBM InfoSphere DataStage, IBM DB2 LUW sobre Linux RHEL</strong>, modelado estad&iacute;stico tabular en <strong>Python (XGBoost, Pandas, PyArrow)</strong> y <strong>SQL</strong>. Biling&uuml;e con <strong>Ingl&eacute;s C1 Avanzado (EF SET 66/100, Listening C2 Proficient)</strong>.</p>
 
     <h2>Investigaci&oacute;n Cient&iacute;fica</h2>
     <hr class="section-rule">
@@ -527,7 +515,7 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM (IBM &amp; Google Cloud Premier Partner)</strong> &ndash; San Salvador</td>
+        <td class="left"><strong>Data Engineer Intern (Digital Solutions Specialist), GBM</strong> &ndash; San Salvador</td>
         <td class="right">Julio 2026 &ndash; Oct 2026</td>
       </tr>
     </table>
@@ -535,7 +523,6 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
       <li>Dise&ntilde;&eacute; una <strong>propuesta de arquitectura ELT</strong> para replicaci&oacute;n en la nube casi en tiempo real en <strong>Google Cloud</strong> (<strong>BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage</strong>) entregando modelos dimensionales en <strong>Lucidchart</strong> y scripts <strong>SQL DDL</strong>.</li>
       <li>Desarroll&eacute; y ejecut&eacute; <strong>tareas pr&aacute;cticas de integraci&oacute;n ETL bajo mentor&iacute;a t&eacute;cnica</strong> en <strong>IBM InfoSphere DataStage</strong> (Transformers, Lookups, Joins, Merge, Funnel) sobre datasets de prueba empresariales y gestion&eacute; consultas en <strong>IBM DB2 LUW</strong> sobre <strong>Linux RHEL</strong>.</li>
       <li>Apoy&eacute; en la formulaci&oacute;n de marcos de gobernanza cloud y validaci&oacute;n presupuestaria FinOps (<strong>IAM</strong> de m&iacute;nimo privilegio, <strong>Service Accounts</strong>, rotaci&oacute;n de credenciales) y dimensionamiento de costos en <strong>Google Cloud Pricing Calculator</strong>.</li>
-      <li>Desarroll&eacute; una herramienta CLI en Python bajo <strong>Spec-Driven Development (SDD)</strong> para compilar documentaci&oacute;n t&eacute;cnica corporativa a PDF y capacit&eacute; a compa&ntilde;eros del equipo en flujos de <strong>Git/SSH</strong>.</li>
     </ul>
 
     <h2>Proyectos</h2>
@@ -547,14 +534,14 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
       </tr>
     </table>
     <ul>
-      <li>Arquitect&eacute; un <strong>Data Lakehouse Medall&oacute;n (Bronze / Silver / Gold)</strong> en <strong>Google BigQuery</strong> con <strong>Dataform SQLX</strong>, transformando 7 tablas raw hacia vistas Silver y <strong>3 Data Marts Gold en Esquema Estrella</strong> (<code>fct_daily_sales</code>, <code>mart_inventory_pareto_abc</code>, <code>dim_products</code>).</li>
+      <li>Arquitect&eacute; un <strong>Data Lakehouse Medall&oacute;n (Bronze / Silver / Gold)</strong> en <strong>Google BigQuery</strong> con <strong>Dataform SQLX</strong>, transformando 4 tablas principales en Bronze hacia vistas Silver y <strong>3 Data Marts Gold en Esquema Estrella</strong> (<code>fct_daily_sales</code>, <code>mart_inventory_pareto_abc</code>, <code>dim_products</code>).</li>
       <li>Defin&iacute; especificaciones bajo <strong>Spec-Driven Development (SDD)</strong> para segmentaci&oacute;n Pareto ABC (80/20), Burn Rate y DOI, alimentando un dashboard ejecutivo de 3 p&aacute;ginas en <strong>Looker Studio</strong> con funciones de ventana anal&iacute;ticas.</li>
-      <li>Constru&iacute; ingesta streaming desacoplada OLTP-a-OLAP con <strong>&lt;50 ms</strong> de latencia hacia BigQuery Bronze v&iacute;a REST API, imponiendo concurrencia ACID e idempotencia por UUID, logrando un costo operativo FinOps permanente de <strong>$0.00/mes en GCP</strong> con <strong>Cloud Run</strong>.</li>
+      <li>Especific&eacute; una arquitectura de ingesta desacoplada con <strong>streaming as&iacute;ncrono v&iacute;a REST API hacia BigQuery Bronze</strong>, estableciendo reglas de concurrencia transaccional e idempotencia por UUID bajo <strong>Spec-Driven Development (SDD)</strong>, y configur&eacute; una <strong>arquitectura FinOps (&lt;$1/mes) en GCP</strong> aprovechando la capa gratuita (Free Tier) en <strong>Cloud Run y BigQuery</strong>.</li>
     </ul>
 
     <h2>Habilidades</h2>
     <hr class="section-rule">
-    <p class="skill-row"><strong>Cloud y Data Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage, Cloud Run, Artifact Registry, Looker Studio, IAM Service Accounts, Cloud Logging/Monitoring, FinOps)</p>
+    <p class="skill-row"><strong>Cloud y Data Warehouses:</strong> Google Cloud Platform (BigQuery, Dataform SQLX, Datastream CDC, Cloud Storage, Cloud Run, Looker Studio, IAM Service Accounts, Cloud Logging/Monitoring, FinOps)</p>
     <p class="skill-row"><strong>Machine Learning y Modelado:</strong> Validaci&oacute;n Anidada (5x3 Nested CV), Bootstrap Resampling, XGBoost, Regresi&oacute;n Log&iacute;stica, BGE-M3 Embeddings, Evaluaci&oacute;n de Precisi&oacute;n Promedio (AP), Arquitectura Medallion</p>
     <p class="skill-row"><strong>Lenguajes y Herramientas:</strong> SQL (GoogleSQL, PostgreSQL 18, Window Functions, CTEs, DDL/DML), Python 3.11 (Pandas, PyArrow, NumPy), Bash, PowerShell, Docker, Linux RHEL, Git/SSH</p>
     <p class="skill-row"><strong>Idiomas:</strong> Espa&ntilde;ol (Nativo), Ingl&eacute;s (C1 Avanzado certificado por EF SET, 66/100, Listening C2 Proficient)</p>
@@ -593,12 +580,9 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
       </tr>
       <tr>
         <td class="left"><strong>Bachillerato T&eacute;cnico Vocacional en Desarrollo de Software</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>Promedio: 9.5/10.0</em></td>
-        <td class="right">Esperado: Dic 2026</td>
+        <td class="right">2026</td>
       </tr>
     </table>
-    <ul>
-      <li><strong>Curr&iacute;culo T&eacute;cnico Clave:</strong> L&oacute;gica Algor&iacute;tmica, Bases de Datos Relacionales (SQL), Estructuras de Datos, Arquitectura Web e Ingenier&iacute;a de Software.</li>
-    </ul>
   </main>"""
 
 
