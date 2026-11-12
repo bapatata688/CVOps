@@ -695,13 +695,13 @@ class TestHarnessUtils(unittest.TestCase):
             "Diego Alejandro Escobar Barahona\n"
             "Junior Data Engineer | Cloud Data Engineer\n"
             "San Salvador, El Salvador | diegoalejandroescobarahona1@gmail.com | +503 7549 0118\n"
-            "linkedin.com/in/diego-escobar-459256394 | github.com/bapatata688\n"
+            "linkedin.com/in/diego-escobar-dev | github.com/bapatata688\n"
         )
         info = extract_cv_contact_info(sample_header)
         self.assertEqual(info["name"], "Diego Alejandro Escobar Barahona")
         self.assertEqual(info["email"], "diegoalejandroescobarahona1@gmail.com")
         self.assertEqual(info["github"], "github.com/bapatata688")
-        self.assertEqual(info["linkedin"], "linkedin.com/in/diego-escobar-459256394")
+        self.assertEqual(info["linkedin"], "linkedin.com/in/diego-escobar-dev")
         self.assertEqual(info["location"], "San Salvador")
 
     def test_parse_ci_harness_output(self):

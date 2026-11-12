@@ -368,7 +368,7 @@ class TestS3AtsParsingSimulation(unittest.TestCase):
 
                 # 4. Profile URLs
                 self.assertIn("github.com/bapatata688", text)
-                self.assertIn("linkedin.com/in/diego-escobar-459256394", text)
+                self.assertIn("linkedin.com/in/diego-escobar-dev", text)
                 self.assertIn("credly.com/badges/e27fea72-5eaf-47ee-a43c-43faa3a8fb10", text)
 
     def test_s3_02_ats_section_demarcation_and_isolation(self):

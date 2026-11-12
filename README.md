@@ -243,5 +243,5 @@ Detailed rationale for architecture decisions is documented in `docs/DECISION_LO
 - **Diego Alejandro Escobar Barahona**
 - **Location**: Soyapango, San Salvador, El Salvador
 - **Email**: [diegoalejandroescobarahona1@gmail.com](mailto:diegoalejandroescobarahona1@gmail.com)
-- **LinkedIn**: [linkedin.com/in/diego-escobar-459256394](https://www.linkedin.com/in/diego-escobar-459256394/)
+- **LinkedIn**: [linkedin.com/in/diego-escobar-dev](https://www.linkedin.com/in/diego-escobar-dev/)
 - **GitHub**: [github.com/bapatata688](https://github.com/bapatata688)
