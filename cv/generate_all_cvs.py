@@ -290,7 +290,7 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
+        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
         <td class="right">Admitted | Term 3, 2027</td>
       </tr>
       <tr>
@@ -373,7 +373,7 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
+        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
         <td class="right">Admitido | Term 3, 2027</td>
       </tr>
       <tr>
@@ -466,7 +466,7 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
+        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
         <td class="right">Admitted | Term 3, 2027</td>
       </tr>
       <tr>
@@ -559,7 +559,7 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA &nbsp;|&nbsp; <em>WSCUC-accredited, 100% Online</em></td>
+        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
         <td class="right">Admitido | Term 3, 2027</td>
       </tr>
       <tr>
