@@ -142,7 +142,7 @@ La siguiente tabla define los términos prohibidos por el arnés de contención,
 | *"Published in IEEE / ACM"* | Solicitud del DOI o enlace en IEEE Xplore; su ausencia invalidará el proceso de selección. | **"Internal Scientific Research Manuscript at GBM"** (manuscrito empírico de 16 páginas). |
 | *"EF SET 95/100"* | Discrepancia directa contra el certificado oficial que marca 66/100 C1. | **"EF SET English Certificate — C1 Advanced (66/100, Listening 75/100 C2 Proficient)"**. |
 | *"Completed 34/34 exercises on SQL Arena"* | El entrevistador puede solicitar demostración en vivo de soluciones avanzadas en el sandbox. | **"Platform Architect & Creator (34 exercises designed, 136 automated tests, 3/34 solved in user telemetry)"**. |
-| *"Revenue-generating startup / $5,000 MRR"* | Solicitud de estados financieros o balances tributarios de la empresa. | **"Cloud-Native Medallion Lakehouse Portfolio Project ($0.00/mo FinOps architecture on GCP)"**. |
+| *"Revenue-generating startup / USD 5,000 MRR"* | Solicitud de estados financieros o balances tributarios de la empresa. | **"Cloud-Native Medallion Lakehouse Portfolio Project (USD 0.00/mo FinOps architecture on GCP)"**. |
 | *"Production PySpark Distributed Cluster"* | Indagación sobre tuning de memoria en clústeres Spark, GC pauses y balanceo de particiones en prod. | **"BigQuery orchestrated via Dataform SQLX with planned batch PySpark roadmap"**. |
 
 ---

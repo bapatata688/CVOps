@@ -40,16 +40,16 @@ Todo elemento descriptivo o cuantitativo presente en el CV debe mapear de manera
 
 #### Dataset, Metodología y Parámetros Numéricos Verificados
 - **Dataset**: UCI Default of Credit Card Clients (Taiwán) — **30,000 registros de crédito** con una tasa positiva de incumplimiento (*default rate*) del **22.12%**.
-- **Arquitectura de Codificación**: Modelo de embeddings `BAAI/bge-m3` congelado (*frozen*, dimensión $d=1,024$), evaluado en inferencia pura sin fine-tuning para verbalizaciones ontológicas.
+- **Arquitectura de Codificación**: Modelo de embeddings `BAAI/bge-m3` congelado (*frozen*, dimensión d = 1,024), evaluado en inferencia pura sin fine-tuning para verbalizaciones ontológicas.
 - **Protocolo Estadístico y Validación**: Validación cruzada anidada estratificada **5×3** (5 pliegues exteriores con 6,000 registros de prueba cada uno; 3 pliegues interiores sobre 24,000 registros para optimización de hiperparámetros). Tres semillas pseudoaleatorias reproducibles: `27092031`, `27092032`, `27092033`. **2,000 iteraciones de bootstrap estratificado pareado** para estimación no paramétrica de intervalos de confianza al 95%.
 - **Métricas Empíricas Clave (Tabla 4 y Tabla 5 del Paper)**:
   - Baseline numérico R8 en XGBoost (liderado por Diego): **0.5596 AP** (exacto: `0.559596`) frente a Regresión Logística (0.4981 AP), representando una ganancia de **+12.2%**.
   - Baseline estructurado crudo R0 en XGBoost: **0.5589 AP** (exacto: `0.558879`).
   - Brazo de texto ontológico verbalizado R5 en XGBoost: **0.5069 AP** (exacto: `0.506909`).
   - Brazo híbrido texto + numérico R9 en XGBoost: **0.5568 AP** (exacto: `0.556833`).
-  - Contraste primario ontológico ($R5 - R2E$): **$-0.0063$ AP** [$-0.0101, -0.0022$] (*degradación estadísticamente significativa causada por la verbalización textual frente al control neutro*).
-  - Restauración híbrida ($R9 - R5$): **$+0.0499$ AP** [$+0.0432, +0.0566$].
-  - Contraste híbrido vs numérico ($R9 - R8$): **$-0.0028$ AP** [$-0.0067, +0.0014$] (*el intervalo cruza el cero, demostrando empíricamente que agregar texto enriquecido con ontologías no añade ganancia marginal sobre las variables numéricas estructuradas limpias*).
+  - Contraste primario ontológico (R5 - R2E): **-0.0063 AP** [-0.0101, -0.0022] (*degradación estadísticamente significativa causada por la verbalización textual frente al control neutro*).
+  - Restauración híbrida (R9 - R5): **+0.0499 AP** [+0.0432, +0.0566].
+  - Contraste híbrido vs numérico (R9 - R8): **-0.0028 AP** [-0.0067, +0.0014] (*el intervalo cruza el cero, demostrando empíricamente que agregar texto enriquecido con ontologías no añade ganancia marginal sobre las variables numéricas estructuradas limpias*).
 
 #### Límites de Contención Ética
 - ✅ **PERMITIDO**:

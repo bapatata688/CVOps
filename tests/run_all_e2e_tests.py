@@ -97,11 +97,14 @@ def run_e2e_suite(
 
     tier_statuses: Dict[str, str] = {}
     total_test_count = 0
+    load_errors: List[str] = []
 
     print("\n--- Test Discovery & Tier Inspection ---")
     for t_key in selected_tiers:
         tier_suite, status = create_tier_suite(t_key, loader)
         tier_statuses[t_key] = status
+        if status.startswith("ERROR"):
+            load_errors.append(f"Tier {t_key}: {status}")
         count = tier_suite.countTestCases()
         total_test_count += count
         overall_suite.addTest(tier_suite)
@@ -112,6 +115,12 @@ def run_e2e_suite(
     print("=" * 80 + "\n")
 
     if total_test_count == 0:
+        if load_errors:
+            print("  FAILURES DETECTED IN TEST SUITE DISCOVERY:")
+            for err in load_errors:
+                print(f"    [-] {err}")
+            print("  VERDICT: [FAIL] Test module loading errors encountered.")
+            return 1
         print("[!] No active tests found to execute in selected tiers.")
         print("[*] Infrastructure verification completed: 0 failures.")
         return 0
@@ -138,11 +147,15 @@ def run_e2e_suite(
     print(f"  Execution Time:       {elapsed:.3f} seconds")
     print("-" * 80)
 
-    if result.wasSuccessful():
+    if result.wasSuccessful() and len(load_errors) == 0:
         print("  VERDICT: [PASS] All executed tests passed successfully with zero errors.")
         print("=" * 80)
         return 0
     else:
+        if load_errors:
+            print("  FAILURES DETECTED IN TEST SUITE DISCOVERY:")
+            for err in load_errors:
+                print(f"    [-] {err}")
         print("  VERDICT: [FAIL] One or more test cases failed or raised errors.")
         print("=" * 80)
         return 1

@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "title": "Interview Defense Questions Database for master_cv",
+  "candidate": "Diego Alejandro Escobar Barahona",
+  "questions": [
+    {
+      "question_id": "Q-TECH-ONTO-01",
+      "persona": "technical",
+      "project": "ontotab",
+      "title": "OntoTab Architecture and Empirical Superiority of Numerical Baselines",
+      "question_text": "In OntoTab, why did the numerical baseline outperform ontology-enriched verbalizations, and what was your specific methodology?",
+      "context": "Evaluates candidate understanding of tabular representations vs dense text embeddings (BGE-M3 d=1024), stratified nested cross-validation, and XGBoost optimization.",
+      "suggested_approach": "Structure answer in STAR format: cite 30,000 records from UCI Credit Default, 5x3 nested CV, 2,000 bootstrap iterations, lead of Activity E01 baseline, R8 numeric baseline 0.5596 AP vs R5 full ontology 0.5069 AP on XGBoost.",
+      "expected_anchors": [
+        "0.5596",
+        "30,000",
+        "5x3",
+        "2,000",
+        "E01",
+        "second author"
+      ],
+      "prohibited_terms": [
+        "lead author",
+        "first author",
+        "principal investigator",
+        "published in IEEE",
+        "95%"
+      ],
+      "rubric_ref": "RUBRIC-TECH-RIGOR"
+    },
+    {
+      "question_id": "Q-ML-ONTO-01",
+      "persona": "ml_researcher",
+      "project": "ontotab",
+      "title": "OntoTab Statistical Significance and Metric Selection",
+      "question_text": "Why did you choose Average Precision over ROC-AUC for OntoTab, and what did the bootstrap confidence intervals reveal about the hybrid contrast?",
+      "context": "Evaluates handling of class imbalance (22.12% default rate) and non-parametric hypothesis testing.",
+      "suggested_approach": "Explain PR-AUC focus on the minority positive class without distortion from true negatives; detail 2,000 paired stratified bootstrap iterations; highlight that hybrid vs numeric contrast (-0.0028 AP) crossed zero.",
+      "expected_anchors": [
+        "0.5596",
+        "30,000",
+        "Average Precision",
+        "2,000",
+        "bootstrap"
+      ],
+      "prohibited_terms": [
+        "lead author",
+        "Machine Learning Engineer",
+        "peer-reviewed publication"
+      ],
+      "rubric_ref": "RUBRIC-TECH-RIGOR"
+    },
+    {
+      "question_id": "Q-BEH-GBM-01",
+      "persona": "behavioral",
+      "project": "gbm",
+      "title": "GBM Internship Scope and Legacy Modernization Ownership",
+      "question_text": "Can you describe a challenging technical obstacle during your internship at GBM and how you collaborated with senior architects?",
+      "context": "Evaluates interpersonal collaboration, ownership within defined boundaries, and enterprise ETL execution.",
+      "suggested_approach": "Detail 13-week internship (July 15 - Oct 15, 2026), developing 15 IBM DataStage jobs with zero data loss, querying DB2 LUW on RHEL, and proposing GCP ELT architecture with Lucidchart models under PO supervision.",
+      "expected_anchors": [
+        "13 semanas",
+        "15 jobs DataStage",
+        "DB2",
+        "RHEL",
+        "BigQuery"
+      ],
+      "prohibited_terms": [
+        "Senior Data Engineer",
+        "permanent position",
+        "full-time employee"
+      ],
+      "rubric_ref": "RUBRIC-BEHAVIORAL-STAR"
+    },
+    {
+      "question_id": "Q-REC-GBM-01",
+      "persona": "recruiter",
+      "project": "gbm",
+      "title": "GBM Professional Journey and Cloud Skills Transition",
+      "question_text": "Walk me through your role at GBM: what were your daily responsibilities as a Digital Solutions Specialist Intern?",
+      "context": "Screening for clarity, self-awareness, and accurate representation of intern status.",
+      "suggested_approach": "Clearly state the 13-week internship, mentoring under AI Lead Joaquín Solórzano and PO Juan Carlos Quintero, delivering 15 DataStage ETL jobs and Python CLI SDD tooling with -80% compile time.",
+      "expected_anchors": [
+        "13 semanas",
+        "15 jobs DataStage",
+        "Intern",
+        "Data & AI"
+      ],
+      "prohibited_terms": [
+        "Senior Data Engineer",
+        "Machine Learning Engineer",
+        "Staff"
+      ],
+      "rubric_ref": "RUBRIC-RECRUITER-FIT"
+    },
+    {
+      "question_id": "Q-EXEC-FERRO-01",
+      "persona": "executive",
+      "project": "ferrostats",
+      "title": "FERROSTATS Business ROI, Medallion Architecture, and FinOps",
+      "question_text": "How does the FERROSTATS Lakehouse deliver business value to retail stakeholders while maintaining a zero-dollar cloud operational cost?",
+      "context": "Evaluates business acumen, Medallion Lakehouse design, Pareto ABC inventory optimization, and GCP FinOps.",
+      "suggested_approach": "Highlight decoupled SQLite POS with <50 ms edge latency, async REST streaming into BigQuery Bronze, Dataform Silver assertions, 3 Star Schema Gold marts, Looker Studio 3-page dashboard, and scale-to-zero FinOps at $0.00/mo.",
+      "expected_anchors": [
+        "$0.00/mes",
+        "<50 ms",
+        "Pareto ABC",
+        "BigQuery",
+        "Dataform"
+      ],
+      "prohibited_terms": [
+        "commercial startup",
+        "paying customers",
+        "ARR",
+        "MRR"
+      ],
+      "rubric_ref": "RUBRIC-EXECUTIVE-VALUE"
+    },
+    {
+      "question_id": "Q-TECH-FERRO-01",
+      "persona": "technical",
+      "project": "ferrostats",
+      "title": "FERROSTATS Medallion Lakehouse and Dataform Assertions",
+      "question_text": "Explain the architectural layers of FERROSTATS and how you implemented automated data quality assertions in Dataform SQLX.",
+      "context": "Technical deep dive into Bronze landing, Silver cleaning, and Gold Kimball modeling.",
+      "suggested_approach": "Describe Bronze REST streaming, Silver views with uniqueness and referential integrity assertions, and Gold marts with Days of Inventory (DOI) 15-day buffers and window functions.",
+      "expected_anchors": [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Dataform",
+        "$0.00/mes"
+      ],
+      "prohibited_terms": [
+        "PySpark cluster in 24/7 production",
+        "Senior Data Engineer"
+      ],
+      "rubric_ref": "RUBRIC-TECH-RIGOR"
+    },
+    {
+      "question_id": "Q-TECH-SQL-01",
+      "persona": "technical",
+      "project": "sql_arena",
+      "title": "SQL Arena Concurrency Hardening and AST Parser",
+      "question_text": "In SQL Arena, how did you resolve Windows NTFS concurrency lock contention and protect the MySQL sandbox from malicious multi-statements?",
+      "context": "Deep dive into InnoDB .ibd table lock mechanics, asynchronous ExecutionMutex serialization, and lexical single-statement AST parsing.",
+      "suggested_approach": "Explain the Windows NTFS .ibd lock issue on drop/create table, how ExecutionMutex serializes resets, raw fields packet inspection for zero-row schemas, and 136/136 automated regression tests.",
+      "expected_anchors": [
+        "ExecutionMutex",
+        "136 tests",
+        "NTFS",
+        "MySQL 8",
+        "React 19"
+      ],
+      "prohibited_terms": [
+        "solved all 34",
+        "34/34 completed",
+        "Senior"
+      ],
+      "rubric_ref": "RUBRIC-TECH-RIGOR"
+    },
+    {
+      "question_id": "Q-AUD-SQL-01",
+      "persona": "auditor",
+      "project": "sql_arena",
+      "title": "SQL Arena Creator Ownership vs Candidate User Telemetry",
+      "question_text": "Your resume mentions SQL Arena with 34 challenges and 136 tests, but internal logs show 3 problems solved. Can you clarify this discrepancy?",
+      "context": "Forensic audit testing candidate integrity between system architect role and candidate solver progress.",
+      "suggested_approach": "Openly explain dual role: full-stack creator/architect of 100% of the platform, the 136 test suite, and the 34 curriculum problems; honest candidate solver progress is 3/34 verified (nulls-1, nulls-2, nulls-3, currently rounding-1).",
+      "expected_anchors": [
+        "136 tests",
+        "3 de 34",
+        "nulls-1",
+        "Creador",
+        "Arquitecto"
+      ],
+      "prohibited_terms": [
+        "solved all 34",
+        "34/34",
+        "completed the whole platform"
+      ],
+      "rubric_ref": "RUBRIC-AUDIT-INTEGRITY"
+    },
+    {
+      "question_id": "Q-AUD-EFSET-01",
+      "persona": "auditor",
+      "project": "gbm",
+      "title": "EF SET Certification Discrepancy Resolution",
+      "question_text": "We noted an earlier reference in preliminary drafts to EF SET 95/100, but your certified score is 66/100. How do you account for this?",
+      "context": "Audits forensic resolution of GAP-001 typo vs certified score.",
+      "suggested_approach": "Explain that 95/100 was a draft typo permanently retired. Official verified score is 66/100 C1 Advanced with 75/100 C2 Listening, certified at cert.efset.org/93nXaa.",
+      "expected_anchors": [
+        "66/100",
+        "C1 Advanced",
+        "75",
+        "Listening",
+        "C2"
+      ],
+      "prohibited_terms": [
+        "95/100",
+        "95 %"
+      ],
+      "rubric_ref": "RUBRIC-AUDIT-INTEGRITY"
+    },
+    {
+      "question_id": "Q-BEH-ONTO-01",
+      "persona": "behavioral",
+      "project": "ontotab",
+      "title": "OntoTab Scientific Humility and Delivering Uncomfortable Truths",
+      "question_text": "Tell me about a time when your experimental results contradicted the team's theoretical expectations, and how you communicated that finding.",
+      "context": "Tests handling of negative empirical results where numerical baselines beat complex ontology embeddings.",
+      "suggested_approach": "STAR answer describing E01 baseline execution over 30,000 credit records, finding R8 numeric baseline 0.5596 AP beat R5 full ontology 0.5069 AP; presenting data objectively to AI Lead Joaquín Solórzano.",
+      "expected_anchors": [
+        "0.5596",
+        "30,000",
+        "second author",
+        "E01"
+      ],
+      "prohibited_terms": [
+        "lead author",
+        "sole author",
+        "Machine Learning Engineer"
+      ],
+      "rubric_ref": "RUBRIC-BEHAVIORAL-STAR"
+    },
+    {
+      "question_id": "Q-EXEC-GBM-01",
+      "persona": "executive",
+      "project": "gbm",
+      "title": "GBM Enterprise Data Modernization Strategy",
+      "question_text": "How did your work at GBM bridge legacy IBM data warehouses with modern cloud data platforms on Google Cloud?",
+      "context": "High-level overview of hybrid architecture, DataStage, DB2 LUW, and BigQuery ELT design.",
+      "suggested_approach": "Describe operational parameterization of DB2 on RHEL, 15 DataStage jobs, and GCP ELT modernization architecture with BigQuery, Dataform, Datastream CDC, and cost modeling.",
+      "expected_anchors": [
+        "13 semanas",
+        "15 jobs DataStage",
+        "DB2",
+        "BigQuery",
+        "Dataform"
+      ],
+      "prohibited_terms": [
+        "Senior Data Engineer",
+        "Cloud Architect"
+      ],
+      "rubric_ref": "RUBRIC-EXECUTIVE-VALUE"
+    },
+    {
+      "question_id": "Q-BEH-SQL-01",
+      "persona": "behavioral",
+      "project": "sql_arena",
+      "title": "SQL Arena Motivation and Learning Discipline",
+      "question_text": "Why did you build SQL Arena from scratch instead of just practicing on LeetCode or HackerRank?",
+      "context": "Evaluates passion for engineering mastery, deep systems understanding, and disciplined interview preparation.",
+      "suggested_approach": "Explain the desire to understand database engines from the inside out: building the Monaco/React UI, Express backend, isolated MySQL sandbox, and 136 automated tests, while maintaining disciplined practice on SQL 50.",
+      "expected_anchors": [
+        "136 tests",
+        "React 19",
+        "MySQL 8",
+        "3 de 34"
+      ],
+      "prohibited_terms": [
+        "solved all 34",
+        "Senior"
+      ],
+      "rubric_ref": "RUBRIC-BEHAVIORAL-STAR"
+    }
+  ]
+}

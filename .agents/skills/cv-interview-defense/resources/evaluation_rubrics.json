@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "title": "STAR Evaluation Rubrics and Anti-Exaggeration Penalty Matrix for master_cv",
+  "rubrics": [
+    {
+      "rubric_id": "RUBRIC-TECH-RIGOR",
+      "name": "Technical Rigor & Systems Architecture Evaluation Rubric",
+      "min_score": 1,
+      "max_score": 5,
+      "criteria": {
+        "star_structure": "Answer clearly articulates Situation, Task, Action, and Result with concrete engineering specifics.",
+        "architectural_depth": "Demonstrates deep understanding of trade-offs (e.g. SQLite WAL edge vs BigQuery Bronze, ExecutionMutex concurrency, or XGBoost vs dense embeddings).",
+        "metric_precision": "Cites exact verified metrics without approximation (0.5596 AP, 30,000 records, <50 ms latency, $0.00/mes).",
+        "anti_exaggeration_penalty": "Immediate fatal penalty and disqualification (score set to 0, FAIL status) if answer contains unbacked seniority (Senior, Staff, Lead), false venue claims (published in IEEE), inflated scores (95/100), or claimed solver progress exceeding 3/34 in SQL Arena.",
+        "deduction_rules": [
+          {
+            "condition": "Mentions Senior Data Engineer or Lead Data Engineer",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Title inflation violation"
+          },
+          {
+            "condition": "Claims lead author or first author on OntoTab",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Authorship misrepresentation (candidate is 2nd of 7)"
+          },
+          {
+            "condition": "Claims published in IEEE or peer-reviewed conference",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Publication status fabrication"
+          },
+          {
+            "condition": "Claims solving 34/34 problems in SQL Arena",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Candidate progress exaggeration (user solved 3/34)"
+          },
+          {
+            "condition": "Claims EF SET score of 95/100",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "English score fabrication (actual verified score is 66/100)"
+          }
+        ]
+      }
+    },
+    {
+      "rubric_id": "RUBRIC-BEHAVIORAL-STAR",
+      "name": "Behavioral & Engineering Ownership STAR Rubric",
+      "min_score": 1,
+      "max_score": 5,
+      "criteria": {
+        "star_structure": "Well-balanced STAR narrative showcasing interpersonal maturity, feedback receptivity, and collaboration.",
+        "ownership_boundary": "Clear distinction between individual contributions (E01 baselines, 15 DataStage jobs, SQL Arena architecture) and team/supervisor direction.",
+        "anti_exaggeration_penalty": "Deduction of 5 points (FATAL penalty) for claiming sole responsibility over team projects or unapproved permanence.",
+        "deduction_rules": [
+          {
+            "condition": "Claims permanent or full-time position at GBM",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Contract misrepresentation (candidate was 13-week intern)"
+          },
+          {
+            "condition": "Exaggerates duration of internship beyond 13 weeks",
+            "deduction_points": 3,
+            "penalty_severity": "HIGH",
+            "reason": "Timeline exaggeration"
+          }
+        ]
+      }
+    },
+    {
+      "rubric_id": "RUBRIC-EXECUTIVE-VALUE",
+      "name": "Executive & FinOps Value Communication Rubric",
+      "min_score": 1,
+      "max_score": 5,
+      "criteria": {
+        "star_structure": "Concise executive overview articulating business problem, engineering solution, and financial/operational ROI.",
+        "business_alignment": "Accurately conveys FinOps mechanisms (scale-to-zero, free-tier compliance, $0.00/mes) and business metrics (Pareto ABC, DOI).",
+        "anti_exaggeration_penalty": "Immediate fatal penalty for framing personal portfolio projects as commercial businesses or venture-backed startups.",
+        "deduction_rules": [
+          {
+            "condition": "Claims commercial revenue, paying customers, or ARR/MRR for FERROSTATS or SQL Arena",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Commercial status exaggeration (both are technical portfolio projects)"
+          }
+        ]
+      }
+    },
+    {
+      "rubric_id": "RUBRIC-RECRUITER-FIT",
+      "name": "Recruiter Screening & Role Alignment Rubric",
+      "min_score": 1,
+      "max_score": 5,
+      "criteria": {
+        "star_structure": "Crisp, confident verbal delivery adhering to STAR framework within a 2-minute response window.",
+        "factual_accuracy": "Precise articulation of educational standing (UoPeople Admitted Term 3 2027), EF SET (66/100 C1), and GBM internship dates.",
+        "anti_exaggeration_penalty": "Fatal penalty for claiming premature graduation from UoPeople or claiming unearned professional certifications.",
+        "deduction_rules": [
+          {
+            "condition": "Claims Google Cloud Professional Data Engineer (PDE)",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Unearned certification claim (candidate holds Associate Data Practitioner)"
+          },
+          {
+            "condition": "Claims graduated from University of the People",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Premature degree claim (candidate is admitted for Term 3 2027)"
+          }
+        ]
+      }
+    },
+    {
+      "rubric_id": "RUBRIC-AUDIT-INTEGRITY",
+      "name": "Forensic Audit & Provenance Verification Rubric",
+      "min_score": 1,
+      "max_score": 5,
+      "criteria": {
+        "star_structure": "Unwavering factual consistency when probed on discrepancies, evidence gaps, or background verification.",
+        "forensic_integrity": "Transparent explanation of historical typos (GAP-001 retired), author ranking (2nd of 7), and student progress.",
+        "anti_exaggeration_penalty": "Zero tolerance: any evasive answer or false claim under audit triggers instant failure.",
+        "deduction_rules": [
+          {
+            "condition": "Any attempt to defend 95/100 score instead of verified 66/100",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Forensic credibility failure"
+          },
+          {
+            "condition": "Denies intern status at GBM or co-author status on OntoTab",
+            "deduction_points": 5,
+            "penalty_severity": "FATAL",
+            "reason": "Factual contradiction of verifiable records"
+          }
+        ]
+      }
+    }
+  ]
+}

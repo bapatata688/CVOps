@@ -1,0 +1,59 @@
+name: CI/CD Pipeline & Truthfulness Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    name: Verify master_cv Pipeline & Geometry
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Linux Shared Dependencies for WeasyPrint (Pango & Cairo)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libpango-1.0-0 \
+            libharfbuzz0b \
+            libpangoft2-1.0-0 \
+            libcairo2 \
+            libgdk-pixbuf-2.0-0 \
+            libffi-dev \
+            shared-mime-info \
+            fonts-liberation
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install weasyprint>=60.0 pypdf>=4.0.0 beautifulsoup4>=4.12.0
+
+      - name: Run Ethical Truthfulness Linter
+        run: python scripts/lint_cv_truth.py
+
+      - name: Compile All Canonical Production PDFs
+        run: python scripts/compile_all.py --all
+
+      - name: Verify 1-Page Letter Geometry & Integrity
+        run: python scripts/verify_geometry.py
+
+      - name: Run Google Drive Sync Validation (Dry-Run)
+        run: python scripts/sync_drive.py --dry-run
+
+      - name: Run Unified Local CI Harness Runner
+        run: python scripts/run_ci_harness.py
+
+      - name: Execute Full E2E Test Suite (All 135 Tests)
+        run: python tests/run_all_e2e_tests.py

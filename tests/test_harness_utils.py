@@ -450,6 +450,107 @@ def assert_truthful_content(
 
 
 # ============================================================================
+# ATS & CI/CD Parsing Helpers (Tier 3 & Tier 4 Extensions)
+# ============================================================================
+
+def extract_pdf_text_full(pdf_path: Union[str, Path]) -> str:
+    """Extracts complete text content from all pages of a PDF using pypdf.
+    
+    Used by Tier 4 ATS parsing and keyword density assertion suites.
+    """
+    if not PYPDF_AVAILABLE:
+        raise RuntimeError("pypdf is not installed.")
+    p = Path(pdf_path)
+    if not p.is_file():
+        raise FileNotFoundError(f"PDF file not found: {p.resolve()}")
+    reader = pypdf.PdfReader(str(p))
+    full_text = []
+    for page in reader.pages:
+        txt = page.extract_text() or ""
+        full_text.append(txt)
+    return "\n".join(full_text)
+
+
+def parse_ats_keywords(
+    text: str,
+    target_keywords: List[str]
+) -> Dict[str, Any]:
+    """Analyzes text for presence and frequency of target ATS keywords.
+    
+    Returns:
+      - matched: list of keywords found
+      - missing: list of keywords not found
+      - match_rate: float between 0.0 and 1.0
+      - frequencies: dict of keyword -> count
+    """
+    frequencies: Dict[str, int] = {}
+    matched: List[str] = []
+    missing: List[str] = []
+
+    for kw in target_keywords:
+        pattern = re.compile(rf"\b{re.escape(kw)}\b", re.IGNORECASE)
+        count = len(pattern.findall(text))
+        frequencies[kw] = count
+        if count > 0:
+            matched.append(kw)
+        else:
+            missing.append(kw)
+
+    rate = len(matched) / len(target_keywords) if target_keywords else 1.0
+    return {
+        "matched": matched,
+        "missing": missing,
+        "match_rate": rate,
+        "frequencies": frequencies,
+    }
+
+
+def extract_cv_contact_info(text: str) -> Dict[str, Optional[str]]:
+    """Extracts candidate contact details using standard ATS parsing heuristics.
+    
+    Returns dict with keys: name, email, github, linkedin, location.
+    """
+    email_match = re.search(r"[\w\.-]+@[\w\.-]+\.\w+", text)
+    github_match = re.search(r"github\.com/[\w\.-]+", text, re.IGNORECASE)
+    linkedin_match = re.search(r"linkedin\.com/in/[\w\.-]+", text, re.IGNORECASE)
+    location_match = re.search(r"(Soyapango|San Salvador|El Salvador)", text, re.IGNORECASE)
+    name_match = re.search(r"Diego\s+(Alejandro\s+)?Escobar(\s+Barahona)?", text, re.IGNORECASE)
+
+    return {
+        "name": name_match.group(0) if name_match else None,
+        "email": email_match.group(0) if email_match else None,
+        "github": github_match.group(0) if github_match else None,
+        "linkedin": linkedin_match.group(0) if linkedin_match else None,
+        "location": location_match.group(0) if location_match else None,
+    }
+
+
+def parse_ci_harness_output(stdout: str) -> Dict[str, Any]:
+    """Parses scripts/run_ci_harness.py execution output into structured stage results.
+    
+    Recognizes stages: Lint, Compile, Geometry, Sync Dry-Run.
+    """
+    stages: Dict[str, bool] = {}
+    stage_names = ["lint", "compile", "geometry", "sync"]
+    
+    for stage in stage_names:
+        # Match pattern like "[STAGE: lint] PASS" or "Stage lint: OK"
+        pass_pattern = re.compile(rf"\[?STAGE:\s*{stage}\]?\s*:\s*(PASS|OK|SUCCESS)", re.IGNORECASE)
+        fail_pattern = re.compile(rf"\[?STAGE:\s*{stage}\]?\s*:\s*(FAIL|ERROR)", re.IGNORECASE)
+        if pass_pattern.search(stdout):
+            stages[stage] = True
+        elif fail_pattern.search(stdout):
+            stages[stage] = False
+
+    all_passed = bool(stages) and all(stages.values()) and ("VERDICT: [PASS]" in stdout or "ALL STAGES PASSED" in stdout)
+    return {
+        "stages": stages,
+        "all_passed": all_passed,
+        "raw_lines": len(stdout.splitlines()),
+    }
+
+
+# ============================================================================
 # Self-Verification Unit Tests
 # ============================================================================
 
@@ -559,6 +660,77 @@ class TestHarnessUtils(unittest.TestCase):
             if temp_log_path.exists():
                 temp_log_path.unlink()
 
+    def test_extract_pdf_text_full(self):
+        """Tests full text extraction from PDF using extract_pdf_text_full."""
+        sample_pdf = Path("c:/Users/Usuario/Projects/master_cv/cv/01_produccion_data_engineering/en/Diego_Alejandro_Escobar_Barahona_CV_EN.pdf")
+        if sample_pdf.exists():
+            text = extract_pdf_text_full(sample_pdf)
+            self.assertGreater(len(text), 1000)
+            self.assertIn("Diego Alejandro Escobar Barahona", text)
+            self.assertIn("University of the People", text)
+
+        with self.assertRaises(FileNotFoundError):
+            extract_pdf_text_full("nonexistent_path_xyz123.pdf")
+
+    def test_parse_ats_keywords(self):
+        """Tests ATS keyword density analysis function."""
+        sample_text = (
+            "Diego is an aspiring Junior Data Engineer proficient in BigQuery, Dataform, "
+            "Python, and SQL with knowledge of Star Schema modeling."
+        )
+        target_keywords = ["BigQuery", "Dataform", "Python", "SQL", "Docker", "Kubernetes"]
+        res = parse_ats_keywords(sample_text, target_keywords)
+
+        self.assertIn("BigQuery", res["matched"])
+        self.assertIn("SQL", res["matched"])
+        self.assertIn("Docker", res["missing"])
+        self.assertIn("Kubernetes", res["missing"])
+        self.assertAlmostEqual(res["match_rate"], 4 / 6, places=2)
+        self.assertEqual(res["frequencies"]["BigQuery"], 1)
+        self.assertEqual(res["frequencies"]["Docker"], 0)
+
+    def test_extract_cv_contact_info(self):
+        """Tests ATS contact detail extraction."""
+        sample_header = (
+            "Diego Alejandro Escobar Barahona\n"
+            "Junior Data Engineer | Cloud Data Engineer\n"
+            "San Salvador, El Salvador | diegoalejandroescobarahona1@gmail.com | +503 7549 0118\n"
+            "linkedin.com/in/diego-escobar-459256394 | github.com/bapatata688\n"
+        )
+        info = extract_cv_contact_info(sample_header)
+        self.assertEqual(info["name"], "Diego Alejandro Escobar Barahona")
+        self.assertEqual(info["email"], "diegoalejandroescobarahona1@gmail.com")
+        self.assertEqual(info["github"], "github.com/bapatata688")
+        self.assertEqual(info["linkedin"], "linkedin.com/in/diego-escobar-459256394")
+        self.assertEqual(info["location"], "San Salvador")
+
+    def test_parse_ci_harness_output(self):
+        """Tests parsing of CI harness execution stdout."""
+        sample_success_stdout = (
+            "[STAGE: lint] : PASS\n"
+            "[STAGE: compile] : PASS\n"
+            "[STAGE: geometry] : PASS\n"
+            "[STAGE: sync] : PASS\n"
+            "VERDICT: [PASS] ALL CI CHECKS PASSED\n"
+        )
+        res_pass = parse_ci_harness_output(sample_success_stdout)
+        self.assertTrue(res_pass["all_passed"])
+        self.assertTrue(res_pass["stages"]["lint"])
+        self.assertTrue(res_pass["stages"]["compile"])
+        self.assertTrue(res_pass["stages"]["geometry"])
+        self.assertTrue(res_pass["stages"]["sync"])
+
+        sample_fail_stdout = (
+            "[STAGE: lint] : PASS\n"
+            "[STAGE: compile] : FAIL\n"
+            "VERDICT: [FAIL]\n"
+        )
+        res_fail = parse_ci_harness_output(sample_fail_stdout)
+        self.assertFalse(res_fail["all_passed"])
+        self.assertTrue(res_fail["stages"]["lint"])
+        self.assertFalse(res_fail["stages"]["compile"])
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+

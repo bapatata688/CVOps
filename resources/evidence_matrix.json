@@ -250,7 +250,7 @@
   "global_forbidden_regexes": [
     {
       "rule_id": "GLOBAL-FORBID-001",
-      "regex": "(?i)\\b(?:95\\s*\\/\\s*100|95%\\s*ef\\s*set|ef\\s*set\\s*(?:score\\s*of\\s*)?95)\\b",
+      "regex": "(?i)\\b(?:95\\s*\\/\\s*100|95%\\s*ef\\s*set|ef\\s*set[\\s:\\-]+(?:score\\s*(?:of\\s*)?)?95)\\b",
       "description": "Strictly forbids claiming EF SET score of 95/100 (historical draft typo; official certified score is 66/100 C1 Advanced with 75/100 C2 Listening).",
       "severity": "FATAL",
       "category": "metric_exaggeration",
@@ -259,7 +259,7 @@
     },
     {
       "rule_id": "GLOBAL-FORBID-002",
-      "regex": "(?i)\\b(?:senior|lead|principal|staff)\\s+(?:data\\s+engineer|cloud\\s+architect|software\\s+engineer|engineer|architect)\\b",
+      "regex": "(?i)(?:\\b(?:senior|lead|principal|staff|sr\\.?)\\s+(?:data\\s+engineer|cloud\\s+architect|software\\s+engineer|engineer|architect)\\b|\\b(?:data\\s+engineer|ingeniero\\s+de\\s+datos|arquitecto\\s+cloud|ingeniero\\s+de\\s+software)\\s+(?:senior|lead|principal|staff|sr\\.?)\\b|\\bingeniero\\s+(?:senior|lead|principal|staff|sr\\.?)\\b)",
       "description": "Strictly forbids senior, lead, principal, or staff job titles for candidate experience.",
       "severity": "FATAL",
       "category": "title_inflation",
@@ -457,7 +457,7 @@
       "forbidden_regex_patterns": [
         {
           "rule_id": "FORBID-ONTO-001",
-          "regex": "(?i)\\b(?:machine\\s+learning\\s+engineer|ml\\s+engineer)\\b(?!\\s*intern)",
+          "regex": "(?i)\\b(?:machine\\s+learning\\s+engineer|ml\\s+engineer|ingeniero\\s+(?:de|en)\\s+(?:machine\\s+learning|ml|aprendizaje\\s+autom[aá]tico))\\b(?!\\s*intern)",
           "description": "Forbids claiming job title of Machine Learning Engineer on OntoTab research.",
           "severity": "FATAL",
           "category": "title_inflation",
@@ -466,7 +466,7 @@
         },
         {
           "rule_id": "FORBID-ONTO-002",
-          "regex": "(?i)\\b(?:principal\\s+investigator|lead\\s+researcher|lead\\s+scientist|first\\s+author|sole\\s+author|as\\s+(?:the\\s+)?lead\\s+author|role:\\s*lead\\s+author|i\\s+was\\s+(?:the\\s+)?lead\\s+author|lead\\s+author\\s+of\\s+ontotab)\\b",
+          "regex": "(?i)(?<!under\\s)(?<!under\\sthe\\s)(?<!bajo\\s)(?<!bajo\\sel\\s)(?<!del\\s)(?<!por\\sel\\s)\\b(?:principal\\s+investigator|investigador\\s+principal|lead\\s+(?:researcher|scientist|author)|first\\s+author|sole\\s+author|primer\\s+autor|autor\\s+(?:principal|[uú]nico))\\b",
           "description": "Forbids claiming lead author or principal investigator status on OntoTab.",
           "severity": "FATAL",
           "category": "authorship_inflation",
@@ -475,7 +475,7 @@
         },
         {
           "rule_id": "FORBID-ONTO-003",
-          "regex": "(?i)\\b(?:peer-reviewed|published\\s+in\\s+(?:ieee|acm|neurips|icml|cvpr|kdd)|indexed\\s+journal|formalmente\\s+publicado)\\b",
+          "regex": "(?i)\\b(?:peer-reviewed|published\\s+in\\s+(?:ieee|acm|neurips|icml|cvpr|kdd)|publicado\\s+en\\s+(?:ieee|acm|neurips|icml|cvpr|kdd)|revisado\\s+por\\s+pares|indexed\\s+journal|revista\\s+indexada|formalmente\\s+publicado)\\b",
           "description": "Forbids claiming OntoTab is formally published in a peer-reviewed conference or indexed journal.",
           "severity": "FATAL",
           "category": "publication_status",
@@ -553,7 +553,7 @@
       "forbidden_regex_patterns": [
         {
           "rule_id": "FORBID-GBM-001",
-          "regex": "(?i)\\b(?:senior|lead|principal|staff)\\s+(?:data\\s+engineer|cloud\\s+architect|software\\s+engineer|engineer|architect)\\b",
+          "regex": "(?i)(?:\\b(?:senior|lead|principal|staff|sr\\.?)\\s+(?:data\\s+engineer|cloud\\s+architect|software\\s+engineer|engineer|architect)\\b|\\b(?:data\\s+engineer|ingeniero\\s+de\\s+datos|arquitecto\\s+cloud|ingeniero\\s+de\\s+software)\\s+(?:senior|lead|principal|staff|sr\\.?)\\b|\\bingeniero\\s+(?:senior|lead|principal|staff|sr\\.?)\\b)",
           "description": "Forbids senior or lead titles for GBM experience.",
           "severity": "FATAL",
           "category": "title_inflation",
@@ -630,7 +630,7 @@
       "forbidden_regex_patterns": [
         {
           "rule_id": "FORBID-FERRO-001",
-          "regex": "(?i)\\b(?:startup|commercial\\s+enterprise|paying\\s+clients?|revenue-generating|\\$[0-9,]+\\s+(?:mrr|arr|revenue)|empresa\\s+comercial|clientes\\s+de\\s+pago)\\b",
+          "regex": "(?i)(?:\\b(?:founder|co-?founder|fundador|co-?fundador|ceo|startup|commercial\\s+enterprise|paying\\s+clients?|revenue-generating|empresa\\s+comercial|clientes\\s+de\\s+pago)\\b|(?:\\$|USD\\s*)[0-9,]+\\s*(?:[kKmM])?\\s+(?:mrr|arr|revenue)\\b)",
           "description": "Forbids claiming FERROSTATS is a commercial startup, paying customer business, or revenue generator.",
           "severity": "FATAL",
           "category": "commercial_fabrication",
@@ -696,7 +696,7 @@
       "forbidden_regex_patterns": [
         {
           "rule_id": "FORBID-SQLA-001",
-          "regex": "(?i)\\b(?:solved|completed|resolvi|complete)\\s+(?:all\\s+)?34(?:\\/34)?\\s+(?:exercises|problems|drills|ejercicios|problemas)\\b",
+          "regex": "(?i)(?:\\b(?:solved|completed|resolvi|resolv[ií]|complet[eé]|complet[oó])\\s+(?:(?:all|todos?\\s+(?:los?)?|los|las)\\s+)?34(?:\\/34)?\\s+(?:exercises|problems|drills|ejercicios|problemas|retos)\\b|\\b34\\s*(?:\\/|\\s+out\\s+of\\s+|\\s+of\\s+|\\s+de\\s+)\\s*34\\s+(?:solved|completed|resueltos?|completados?)\\b)",
           "description": "Strictly forbids claiming candidate solved all 34 exercises (candidate solved 3/34; designed 34 as platform creator).",
           "severity": "FATAL",
           "category": "progress_exaggeration",
@@ -778,7 +778,7 @@
       "forbidden_regex_patterns": [
         {
           "rule_id": "FORBID-EF-001",
-          "regex": "(?i)\\b(?:95\\s*\\/\\s*100|95%\\s*ef\\s*set|ef\\s*set\\s*(?:score\\s*of\\s*)?95)\\b",
+          "regex": "(?i)\\b(?:95\\s*\\/\\s*100|95%\\s*ef\\s*set|ef\\s*set[\\s:\\-]+(?:score\\s*(?:of\\s*)?)?95)\\b",
           "description": "Strictly forbids claiming EF SET score 95/100 anywhere in the portfolio.",
           "severity": "FATAL",
           "category": "metric_exaggeration",
@@ -808,7 +808,7 @@
       "forbidden_regex_patterns": [
         {
           "rule_id": "FORBID-EDU-001",
-          "regex": "(?i)\\b(?:graduated\\s+from|degree\\s+awarded\\s+by|alumni\\s+of)\\s+university\\s+of\\s+the\\s+people\\b",
+          "regex": "(?i)\\b(?:graduated?\\s+from|degree\\s+awarded\\s+by|alumn[iua]\\s+of|graduate\\s+of|graduad[oa]\\s+de|titulad[oa]\\s+por|egresad[oa]\\s+de)\\s+(?:university\\s+of\\s+the\\s+people|uopeople)\\b",
           "description": "Forbids claiming to have graduated from UoPeople before starting studies in Jan 2027.",
           "severity": "FATAL",
           "category": "education_inflation",
