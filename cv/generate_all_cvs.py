@@ -225,7 +225,7 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
 
     <h2>Professional Summary</h2>
     <hr class="section-rule">
-    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> with enterprise internship experience at <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> and experience designing cloud architecture for a <strong>Medallion Data Lakehouse on Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, fluent in <strong>English (C1 Advanced, EF SET 66/100)</strong>, with hands-on experience in <strong>BigQuery, Dataform (SQLX), SQL, Python, and Spec-Driven Development (SDD)</strong>, and working knowledge of <strong>Datastream CDC, IBM InfoSphere DataStage, and IBM DB2 LUW</strong>.</p>
+    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> with enterprise internship experience at <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> and <strong>hands-on project experience designing a Medallion Data Lakehouse architecture on Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, fluent in <strong>English (C1 Advanced, EF SET 66/100)</strong>, with hands-on experience in <strong>BigQuery, Dataform (SQLX), SQL, Python, and Spec-Driven Development (SDD)</strong>, and working knowledge of <strong>Datastream CDC, IBM InfoSphere DataStage, and IBM DB2 LUW</strong>.</p>
 
     <h2>Experience</h2>
     <hr class="section-rule">
@@ -277,7 +277,7 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
         <td class="right">Aug 2026</td>
       </tr>
       <tr>
-        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Advanced (66/100: Listening C2, Reading C1, Speaking C1)</strong></a></td>
+        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Advanced (66/100: Listening C2, Reading C1, Speaking C1, Writing B2)</strong></a></td>
         <td class="right">Jan 2026</td>
       </tr>
       <tr>
@@ -290,8 +290,12 @@ HTML_BODY_DE_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
-        <td class="right">Admitted | Term 3, 2027</td>
+        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="right">Admitted | Expected Start: 2027</td>
+      </tr>
+      <tr>
+        <td class="left"><em>Pasadena, CA, USA &nbsp;|&nbsp; WSCUC-accredited institution &nbsp;|&nbsp; Fully Online</em></td>
+        <td class="right"></td>
       </tr>
       <tr>
         <td class="left"><strong>Technical Baccalaureate in Software Development</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>GPA: 9.5/10.0</em></td>
@@ -308,7 +312,7 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
 
     <h2>Perfil Profesional</h2>
     <hr class="section-rule">
-    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> con experiencia de pasant&iacute;a empresarial en <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> y experiencia dise&ntilde;ando arquitectura Cloud para un <strong>Data Lakehouse Medallion en Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, con <strong>ingl&eacute;s C1 Avanzado (EF SET 66/100)</strong>, experiencia pr&aacute;ctica en <strong>BigQuery, Dataform (SQLX), SQL, Python y Spec-Driven Development (SDD)</strong>, y conocimiento funcional de <strong>Datastream CDC, IBM InfoSphere DataStage e IBM DB2 LUW</strong>.</p>
+    <p class="summary-text"><strong>Junior Data Engineer &amp; Analytics Engineer</strong> con experiencia de pasant&iacute;a empresarial en <strong>GBM (IBM &amp; Google Cloud Premier Partner)</strong> y <strong>experiencia pr&aacute;ctica en proyectos dise&ntilde;ando una arquitectura Data Lakehouse Medallion en Google Cloud Platform (GCP)</strong>. <strong>Google Cloud Certified &mdash; Associate Data Practitioner</strong>, con <strong>ingl&eacute;s C1 Avanzado (EF SET 66/100)</strong>, experiencia pr&aacute;ctica en <strong>BigQuery, Dataform (SQLX), SQL, Python y Spec-Driven Development (SDD)</strong>, y conocimiento funcional de <strong>Datastream CDC, IBM InfoSphere DataStage e IBM DB2 LUW</strong>.</p>
 
     <h2>Experiencia</h2>
     <hr class="section-rule">
@@ -360,7 +364,7 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
         <td class="right">Ago 2026</td>
       </tr>
       <tr>
-        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Avanzado (66/100: Listening C2, Reading C1, Speaking C1)</strong></a></td>
+        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Avanzado (66/100: Listening C2, Reading C1, Speaking C1, Writing B2)</strong></a></td>
         <td class="right">Ene 2026</td>
       </tr>
       <tr>
@@ -373,8 +377,12 @@ HTML_BODY_DE_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
-        <td class="right">Admitido | Term 3, 2027</td>
+        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="right">Admitido | Inicio esperado: 2027</td>
+      </tr>
+      <tr>
+        <td class="left"><em>Pasadena, CA, USA &nbsp;|&nbsp; WSCUC-accredited institution &nbsp;|&nbsp; Fully Online</em></td>
+        <td class="right"></td>
       </tr>
       <tr>
         <td class="left"><strong>Bachillerato T&eacute;cnico Vocacional en Desarrollo de Software</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>Promedio: 9.5/10.0</em></td>
@@ -453,7 +461,7 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
         <td class="right">Aug 2026</td>
       </tr>
       <tr>
-        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Advanced</strong> (66/100 global &bull; Listening 75 C2 &bull; Speaking 69 C1)</a></td>
+        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Advanced (66/100: Listening C2, Reading C1, Speaking C1, Writing B2)</strong></a></td>
         <td class="right">Jan 2026</td>
       </tr>
       <tr>
@@ -466,8 +474,12 @@ HTML_BODY_PUB_EN = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
-        <td class="right">Admitted | Term 3, 2027</td>
+        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="right">Admitted | Expected Start: 2027</td>
+      </tr>
+      <tr>
+        <td class="left"><em>Pasadena, CA, USA &nbsp;|&nbsp; WSCUC-accredited institution &nbsp;|&nbsp; Fully Online</em></td>
+        <td class="right"></td>
       </tr>
       <tr>
         <td class="left"><strong>Technical Baccalaureate in Software Development</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>GPA: 9.5/10.0</em></td>
@@ -546,7 +558,7 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
         <td class="right">Ago 2026</td>
       </tr>
       <tr>
-        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Advanced</strong> (66/100 global &bull; Listening 75 C2 &bull; Speaking 69 C1)</a></td>
+        <td class="left"><a href="https://cert.efset.org/93nXaa"><strong>EF SET English Certificate &mdash; C1 Avanzado (66/100: Listening C2, Reading C1, Speaking C1, Writing B2)</strong></a></td>
         <td class="right">Ene 2026</td>
       </tr>
       <tr>
@@ -559,8 +571,12 @@ HTML_BODY_PUB_ES = """  <main class="document-flow">
     <hr class="section-rule">
     <table class="entry-header">
       <tr>
-        <td class="left" style="white-space: nowrap;"><strong>Bachelor of Science in Computer Science</strong> &ndash; University of the People, Pasadena, CA | <em>WSCUC-accredited, 100% Online</em></td>
-        <td class="right">Admitido | Term 3, 2027</td>
+        <td class="left"><strong>University of the People</strong> &mdash; <strong>Bachelor of Science in Computer Science</strong></td>
+        <td class="right">Admitido | Inicio esperado: 2027</td>
+      </tr>
+      <tr>
+        <td class="left"><em>Pasadena, CA, USA &nbsp;|&nbsp; WSCUC-accredited institution &nbsp;|&nbsp; Fully Online</em></td>
+        <td class="right"></td>
       </tr>
       <tr>
         <td class="left"><strong>Bachillerato T&eacute;cnico Vocacional en Desarrollo de Software</strong> &ndash; Instituto Nacional San Luis &nbsp;|&nbsp; <em>Promedio: 9.5/10.0</em></td>

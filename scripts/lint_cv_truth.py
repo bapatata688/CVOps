@@ -203,8 +203,8 @@ def verify_canonical_metrics(files: List[Path]) -> List[str]:
     if "University of the People" not in combined_text:
         errors.append("Missing verified education anchor: University of the People")
 
-    if "Term 3, 2027" not in combined_text and "Term 3 2027" not in combined_text:
-        errors.append("Missing verified enrollment term: Term 3, 2027")
+    if "Term 3, 2027" not in combined_text and "Term 3 2027" not in combined_text and "Expected Start: 2027" not in combined_text and "Inicio esperado: 2027" not in combined_text:
+        errors.append("Missing verified enrollment term: Expected Start: 2027")
 
     return errors
 

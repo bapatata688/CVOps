@@ -226,25 +226,26 @@ class TestS2RecruitmentScreenerSimulation(unittest.TestCase):
         self.assertIn("Datastream CDC", de_en_text)
 
     def test_s2_04_screener_uopeople_admission_and_terms(self):
-        """S2 Screener UoPeople: Audits BS in CS, Pasadena CA, Admitted Term 3 2027, WSCUC, 100% Online."""
+        """S2 Screener UoPeople: Audits BS in CS, Pasadena CA, Admitted Expected Start 2027, WSCUC, Fully Online."""
         for pdf_name, text in self.extracted_pdf_texts.items():
             with self.subTest(pdf=pdf_name):
                 self.assertIn("University of the People", text)
                 self.assertIn("Pasadena", text)
                 self.assertIn("Bachelor of Science in Computer Science", text)
-                self.assertTrue("Term 3, 2027" in text or "Term 3 2027" in text)
+                self.assertTrue("Expected Start: 2027" in text or "Inicio esperado: 2027" in text or "Term 3, 2027" in text)
                 self.assertTrue("Admitted" in text or "Admitido" in text)
                 self.assertIn("WSCUC", text)
-                self.assertTrue("100% Online" in text or "100% en" in text)
+                self.assertTrue("Fully Online" in text or "100% Online" in text or "100% en" in text)
                 # Ensure no premature graduation claim
                 self.assertNotIn("graduated from university of the people", text.lower())
 
     def test_s2_05_screener_ef_set_english_score_authenticity(self):
-        """S2 Screener EF SET: Audits certified 66/100 C1 Advanced; asserts zero occurrences of draft typo 95/100."""
+        """S2 Screener EF SET: Audits certified 66/100 C1 Advanced and all 4 skill breakdowns (including Writing B2); asserts zero occurrences of draft typo 95/100."""
         for pdf_name, text in self.extracted_pdf_texts.items():
             with self.subTest(pdf=pdf_name):
                 self.assertIn("66/100", text, f"Missing certified 66/100 score in {pdf_name}")
                 self.assertTrue("C1" in text, f"Missing C1 level in {pdf_name}")
+                self.assertIn("Writing B2", text, f"Missing Writing B2 breakdown in {pdf_name}")
                 self.assertNotIn("95/100", text, f"Found draft typo 95/100 in {pdf_name}")
                 self.assertNotIn("95 / 100", text)
 

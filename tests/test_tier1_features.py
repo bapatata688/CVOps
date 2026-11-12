@@ -305,11 +305,11 @@ class TestF5UoPeopleVerbatimBlock(unittest.TestCase):
                 f"Missing 'Bachelor of Science in Computer Science' in {tmpl.name}"
             )
             # 4. Status and Term
-            has_term = ("Term 3, 2027" in content or "Term 3 2027" in content)
+            has_term = ("Term 3, 2027" in content or "Term 3 2027" in content or "Expected Start: 2027" in content or "Inicio esperado: 2027" in content)
             has_status = ("Admitted" in content or "Admitido" in content)
             self.assertTrue(
                 has_term and has_status,
-                f"Missing 'Admitted | Term 3, 2027' in {tmpl.name}"
+                f"Missing 'Admitted | Expected Start: 2027' in {tmpl.name}"
             )
             # 5. WSCUC accreditation
             self.assertIn(
@@ -318,10 +318,10 @@ class TestF5UoPeopleVerbatimBlock(unittest.TestCase):
                 f"Missing WSCUC accreditation reference in {tmpl.name}"
             )
             # 6. Modality
-            has_online = ("100% Online" in content or "100% en" in content or "Online" in content)
+            has_online = ("Fully Online" in content or "100% Online" in content or "100% en" in content or "Online" in content)
             self.assertTrue(
                 has_online,
-                f"Missing 100% Online modality indicator in {tmpl.name}"
+                f"Missing Fully Online modality indicator in {tmpl.name}"
             )
 
 
